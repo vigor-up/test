@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>凤雏生态农业 - 300日龄蛋鸡实验测试方案</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <!-- Tailwind 配置 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2E7D32', // 农业绿
+                        secondary: '#FF8F00', // 暖橙
+                        neutral: '#F5F5F5',
+                        dark: '#263238'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .table-responsive {
+                overflow-x: auto;
+            }
+            .section-card {
+                @apply bg-white rounded-lg shadow-md p-6 mb-6 transition-all hover:shadow-lg;
+            }
+            .text-badge {
+                @apply inline-block px-2 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary;
+            }
+            .header-underline {
+                @apply border-b-2 border-primary/30 pb-2 mb-4;
+            }
+        }
+    </style>
+</head>
+<body class="bg-neutral text-dark">
+    <!-- 顶部导航 -->
+    <header class="bg-primary text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <i class="fa fa-leaf text-3xl mr-3"></i>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-bold">凤雏生态农业</h1>
+                    <p class="text-sm opacity-80">300日龄蛋鸡实验测试方案</p>
+                </div>
+            </div>
+            <div class="flex space-x-4">
+                <span class="bg-secondary/90 px-3 py-1 rounded-full text-xs font-medium">实验周期：60天</span>
+                <span class="bg-white/20 px-3 py-1 rounded-full text-xs font-medium">试验规模：40,000羽</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- 方案概述 -->
+        <section class="section-card">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-primary header-underline">方案概述</h2>
+                <p class="text-lg leading-relaxed mt-4">
+                    本方案专为<span class="font-bold text-primary">凤雏生态农业</span>四万羽<span class="font-bold">300日龄</span>蛋鸡设计，试验周期为两个月。
+                    300日龄蛋鸡正处于产蛋高峰后期，是验证产品能否<span class="font-bold text-secondary">延缓生产性能下降、改善蛋壳品质</span>的关键窗口期。
+                    通过科学的实验设计和全面的指标监测，客观评估测试产品对蛋鸡生产性能的改善效果。
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                <div class="bg-neutral p-4 rounded-lg border-l-4 border-primary">
+                    <h3 class="font-bold flex items-center"><i class="fa fa-calendar mr-2"></i>试验周期</h3>
+                    <p class="mt-2">60天（7-10天预饲期 + 50-53天正试期）</p>
+                </div>
+                <div class="bg-neutral p-4 rounded-lg border-l-4 border-secondary">
+                    <h3 class="font-bold flex items-center"><i class="fa fa-paw mr-2"></i>试验动物</h3>
+                    <p class="mt-2">40,000羽300日龄商品蛋鸡（京红1号/海兰褐）</p>
+                </div>
+                <div class="bg-neutral p-4 rounded-lg border-l-4 border-primary">
+                    <h3 class="font-bold flex items-center"><i class="fa fa-map-marker mr-2"></i>试验地点</h3>
+                    <p class="mt-2">凤雏生态农业养殖基地</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 实验测试设计方案 -->
+        <section class="section-card">
+            <h2 class="text-2xl font-bold text-primary header-underline">
+                <i class="fa fa-list-alt mr-2"></i>实验测试设计方案
+            </h2>
+
+            <!-- 分组设计 -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold mb-4 text-dark">1. 分组设计</h3>
+                <p class="mb-4">
+                    鉴于四万羽养殖规模，采用<span class="font-bold">完全随机分组</span>方式，确保两组鸡群在试验开始前的产蛋率、体重、健康状态无显著差异。
+                    每组设置8-10个重复（每个重复2,000-2,500羽），消除环境因素干扰。
+                </p>
+                
+                <div class="table-responsive">
+                    <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                        <thead>
+                            <tr class="bg-primary/10 text-primary">
+                                <th class="py-3 px-4 border-b text-left">组别</th>
+                                <th class="py-3 px-4 border-b text-left">数量</th>
+                                <th class="py-3 px-4 border-b text-left">处理方案</th>
+                                <th class="py-3 px-4 border-b text-left">说明</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">实验组</td>
+                                <td class="py-3 px-4 border-b">20,000羽</td>
+                                <td class="py-3 px-4 border-b">基础日粮 + 1公斤/吨测试产品</td>
+                                <td class="py-3 px-4 border-b">按推荐添加量均匀混合</td>
+                            </tr>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">对照组</td>
+                                <td class="py-3 px-4 border-b">20,000羽</td>
+                                <td class="py-3 px-4 border-b">基础日粮（不添加测试产品）</td>
+                                <td class="py-3 px-4 border-b">保持原有配方不变</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 饲养管理 -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold mb-4 text-dark">2. 饲养管理</h3>
+                <ul class="list-disc list-inside space-y-2 pl-4">
+                    <li>采用相同饲养密度、光照程序、免疫流程</li>
+                    <li>自由采食、自由饮水</li>
+                    <li>每日记录死淘数及异常情况</li>
+                    <li>预饲期统一饲喂基础日粮，消除前期饲料差异</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 关键观察指标 -->
+        <section class="section-card">
+            <h2 class="text-2xl font-bold text-primary header-underline">
+                <i class="fa fa-bar-chart mr-2"></i>关键观察指标
+            </h2>
+
+            <!-- 产蛋性能指标 -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold mb-4 text-dark flex items-center">
+                    <i class="fa fa-calendar-check-o text-secondary mr-2"></i>
+                    产蛋性能指标（每日/每周统计）
+                </h3>
+                <div class="table-responsive">
+                    <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                        <thead>
+                            <tr class="bg-primary/10 text-primary">
+                                <th class="py-3 px-4 border-b text-left">指标</th>
+                                <th class="py-3 px-4 border-b text-left">单位</th>
+                                <th class="py-3 px-4 border-b text-left">采集频率</th>
+                                <th class="py-3 px-4 border-b text-left">说明</th>
+                                <th class="py-3 px-4 border-b text-left">科学依据</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">产蛋率</td>
+                                <td class="py-3 px-4 border-b">%</td>
+                                <td class="py-3 px-4 border-b">每日</td>
+                                <td class="py-3 px-4 border-b">实验组 vs 对照组，重点关注下降趋势是否延缓</td>
+                                <td class="py-3 px-4 border-b">300日龄后产蛋率自然缓慢下降</td>
+                            </tr>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">平均蛋重</td>
+                                <td class="py-3 px-4 border-b">g</td>
+                                <td class="py-3 px-4 border-b">每周</td>
+                                <td class="py-3 px-4 border-b">300日龄后蛋重可能继续增加，需关注是否过大</td>
+                                <td class="py-3 px-4 border-b">蛋重过大易导致蛋壳变薄</td>
+                            </tr>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">日产蛋量</td>
+                                <td class="py-3 px-4 border-b">g/羽/日</td>
+                                <td class="py-3 px-4 border-b">每周</td>
+                                <td class="py-3 px-4 border-b">产蛋率×蛋重，综合反映生产效益</td>
+                                <td class="py-3 px-4 border-b">-</td>
+                            </tr>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">料蛋比</td>
+                                <td class="py-3 px-4 border-b">—</td>
+                                <td class="py-3 px-4 border-b">每周</td>
+                                <td class="py-3 px-4 border-b">采食量 ÷ 总蛋重，反映饲料转化效率</td>
+                                <td class="py-3 px-4 border-b">-</td>
+                            </tr>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">破蛋率/次品蛋率</td>
+                                <td class="py-3 px-4 border-b">%</td>
+                                <td class="py-3 px-4 border-b">每日</td>
+                                <td class="py-3 px-4 border-b">包括破壳蛋、软壳蛋、暗斑蛋、沙壳蛋等</td>
+                                <td class="py-3 px-4 border-b">300日龄后破蛋率开始上升</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 蛋品质指标 -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold mb-4 text-dark flex items-center">
+                    <i class="fa fa-egg text-secondary mr-2"></i>
+                    蛋品质指标（每2周抽样检测）
+                </h3>
+                <div class="bg-neutral p-3 rounded-lg mb-4">
+                    <p class="font-medium">抽样方法：</p>
+                    <p>每组随机取60-120枚鸡蛋（每个重复6-10枚），24小时内完成检测</p>
+                </div>
+                <div class="table-responsive">
+                    <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                        <thead>
+                            <tr class="bg-primary/10 text-primary">
+                                <th class="py-3 px-4 border-b text-left">指标</th>
+                                <th class="py-3 px-4 border-b text-left">单位</th>
+                                <th class="py-3 px-4 border-b text-left">预期改善方向</th>
+                                <th class="py-3 px-4 border-b text-left">科学依据</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">蛋壳厚度</td>
+                                <td class="py-3 px-4 border-b">mm</td>
+                                <td class="py-3 px-4 border-b text-green-600">↑ 增厚</td>
+                                <td class="py-3 px-4 border-b">300日龄后蛋壳变薄，是核心痛点</td>
+                            </tr>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">蛋壳强度</td>
+                                <td class="py-3 px-4 border-b">kgf</td>
+                                <td class="py-3 px-4 border-b text-green-600">↑ 增强</td>
+                                <td class="py-3 px-4 border-b">反映蛋壳抗破裂能力</td>
+                            </tr>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">哈氏单位</td>
+                                <td class="py-3 px-4 border-b">—</td>
+                                <td class="py-3 px-4 border-b text-green-600">↑ 提升</td>
+                                <td class="py-3 px-4 border-b">反映蛋白浓稠度，300日龄后下降明显</td>
+                            </tr>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">蛋黄颜色</td>
+                                <td class="py-3 px-4 border-b">罗氏比色扇级 (1-15)</td>
+                                <td class="py-3 px-4 border-b text-green-600">↑ 加深</td>
+                                <td class="py-3 px-4 border-b">消费者偏好指标</td>
+                            </tr>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">暗斑蛋比例</td>
+                                <td class="py-3 px-4 border-b">%</td>
+                                <td class="py-3 px-4 border-b text-red-600">↓ 减少</td>
+                                <td class="py-3 px-4 border-b">蛋壳腺功能改善的表现</td>
+                            </tr>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">蛋壳色度</td>
+                                <td class="py-3 px-4 border-b">% 反射率</td>
+                                <td class="py-3 px-4 border-b text-blue-600">→ 维持稳定</td>
+                                <td class="py-3 px-4 border-b">蛋壳颜色均匀度</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 健康与抗氧化指标 -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold mb-4 text-dark flex items-center">
+                    <i class="fa fa-heartbeat text-secondary mr-2"></i>
+                    健康与抗氧化指标（试验结束前检测）
+                </h3>
+                <div class="bg-neutral p-3 rounded-lg mb-4">
+                    <p class="font-medium">抽样方法：</p>
+                    <p>每组随机取20-30只鸡，采血检测</p>
+                </div>
+                <div class="table-responsive">
+                    <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                        <thead>
+                            <tr class="bg-primary/10 text-primary">
+                                <th class="py-3 px-4 border-b text-left">指标</th>
+                                <th class="py-3 px-4 border-b text-left">单位</th>
+                                <th class="py-3 px-4 border-b text-left">预期改善方向</th>
+                                <th class="py-3 px-4 border-b text-left">说明</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">血清MDA（丙二醛）</td>
+                                <td class="py-3 px-4 border-b">nmol/mL</td>
+                                <td class="py-3 px-4 border-b text-red-600">↓ 降低</td>
+                                <td class="py-3 px-4 border-b">反映机体氧化应激水平</td>
+                            </tr>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">总抗氧化能力（T-AOC）</td>
+                                <td class="py-3 px-4 border-b">U/mL</td>
+                                <td class="py-3 px-4 border-b text-green-600">↑ 提升</td>
+                                <td class="py-3 px-4 border-b">抗氧化系统整体功能</td>
+                            </tr>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">IL-1β、IL-6等炎症因子</td>
+                                <td class="py-3 px-4 border-b">pg/mL</td>
+                                <td class="py-3 px-4 border-b text-red-600">↓ 降低</td>
+                                <td class="py-3 px-4 border-b">反映产蛋相关的炎症水平</td>
+                            </tr>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">肝脏脂肪含量</td>
+                                <td class="py-3 px-4 border-b">%</td>
+                                <td class="py-3 px-4 border-b text-red-600">↓ 降低</td>
+                                <td class="py-3 px-4 border-b">脂肪肝综合征风险指标</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 生产持久性指标 -->
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold mb-4 text-dark flex items-center">
+                    <i class="fa fa-line-chart text-secondary mr-2"></i>
+                    生产持久性指标
+                </h3>
+                <div class="table-responsive">
+                    <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                        <thead>
+                            <tr class="bg-primary/10 text-primary">
+                                <th class="py-3 px-4 border-b text-left">指标</th>
+                                <th class="py-3 px-4 border-b text-left">单位</th>
+                                <th class="py-3 px-4 border-b text-left">采集频率</th>
+                                <th class="py-3 px-4 border-b text-left">说明</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">死淘率</td>
+                                <td class="py-3 px-4 border-b">%</td>
+                                <td class="py-3 px-4 border-b">每周</td>
+                                <td class="py-3 px-4 border-b">记录死亡和淘汰数量及原因</td>
+                            </tr>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">产蛋下降幅度</td>
+                                <td class="py-3 px-4 border-b">%</td>
+                                <td class="py-3 px-4 border-b">试验前后对比</td>
+                                <td class="py-3 px-4 border-b">试验结束时两组产蛋率对比下降值</td>
+                            </tr>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">体重变化</td>
+                                <td class="py-3 px-4 border-b">g</td>
+                                <td class="py-3 px-4 border-b">试验前后</td>
+                                <td class="py-3 px-4 border-b">每组随机称重50-100只</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 对比分析方法 -->
+        <section class="section-card">
+            <h2 class="text-2xl font-bold text-primary header-underline">
+                <i class="fa fa-balance-scale mr-2"></i>对比分析方法
+            </h2>
+
+            <!-- 核心对比维度 -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-4 text-dark">1. 核心对比维度</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-neutral p-4 rounded-lg border border-primary/20">
+                        <h4 class="font-bold text-primary mb-2">组间对比</h4>
+                        <p>实验组 vs 对照组（同一时间点）</p>
+                    </div>
+                    <div class="bg-neutral p-4 rounded-lg border border-primary/20">
+                        <h4 class="font-bold text-primary mb-2">自身对比</h4>
+                        <p>试验开始前 vs 试验结束后（同组内变化）</p>
+                    </div>
+                    <div class="bg-neutral p-4 rounded-lg border border-primary/20">
+                        <h4 class="font-bold text-primary mb-2">趋势对比</h4>
+                        <p>每日/每周数据绘制曲线，观察下降斜率差异</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 重点关注指标 -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-4 text-dark">2. 重点关注指标</h3>
+                <div class="table-responsive">
+                    <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                        <thead>
+                            <tr class="bg-primary/10 text-primary">
+                                <th class="py-3 px-4 border-b text-left">指标</th>
+                                <th class="py-3 px-4 border-b text-left">300日龄蛋鸡特点</th>
+                                <th class="py-3 px-4 border-b text-left">预期观察方向</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">产蛋率</td>
+                                <td class="py-3 px-4 border-b">开始缓慢下降</td>
+                                <td class="py-3 px-4 border-b">实验组下降斜率是否更平缓</td>
+                            </tr>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">蛋壳厚度/强度</td>
+                                <td class="py-3 px-4 border-b">逐渐变薄</td>
+                                <td class="py-3 px-4 border-b">实验组是否维持更优</td>
+                            </tr>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">哈氏单位</td>
+                                <td class="py-3 px-4 border-b">逐渐降低</td>
+                                <td class="py-3 px-4 border-b">实验组是否下降更慢</td>
+                            </tr>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">破蛋率</td>
+                                <td class="py-3 px-4 border-b">开始上升</td>
+                                <td class="py-3 px-4 border-b">实验组上升幅度是否更小</td>
+                            </tr>
+                            <tr class="hover:bg-neutral">
+                                <td class="py-3 px-4 border-b font-bold">抗氧化指标</td>
+                                <td class="py-3 px-4 border-b">氧化应激增加</td>
+                                <td class="py-3 px-4 border-b">实验组是否改善</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 数据可视化示例 -->
+            <div class="mt-8">
+                <h3 class="text-xl font-semibold mb-4 text-dark">3. 数据可视化示例</h3>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <canvas id="layRateChart" height="300"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- 数据记录与报告建议 -->
+        <section class="section-card">
+            <h2 class="text-2xl font-bold text-primary header-underline">
+                <i class="fa fa-file-text-o mr-2"></i>数据记录与报告建议
+            </h2>
+
+            <!-- 记录表格 -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-4 text-dark">1. 推荐记录表格</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-bold mb-2 text-primary">每日基础记录表</h4>
+                        <div class="table-responsive text-sm">
+                            <table class="min-w-full bg-white border border-gray-200">
+                                <thead>
+                                    <tr class="bg-primary/10">
+                                        <th class="py-2 px-2 border-b">日期</th>
+                                        <th class="py-2 px-2 border-b">组别</th>
+                                        <th class="py-2 px-2 border-b">存栏数</th>
+                                        <th class="py-2 px-2 border-b">产蛋数</th>
+                                        <th class="py-2 px-2 border-b">破蛋数</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="text-center hover:bg-neutral">
+                                        <td class="py-2 px-2 border-b">2024-XX-XX</td>
+                                        <td class="py-2 px-2 border-b">实验组</td>
+                                        <td class="py-2 px-2 border-b">待记录</td>
+                                        <td class="py-2 px-2 border-b">待记录</td>
+                                        <td class="py-2 px-2 border-b">待记录</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <a href="#" class="text-primary text-sm mt-2 inline-block">
+                            <i class="fa fa-download mr-1"></i>下载完整Excel模板
+                        </a>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-2 text-primary">蛋品质抽样记录表</h4>
+                        <div class="table-responsive text-sm">
+                            <table class="min-w-full bg-white border border-gray-200">
+                                <thead>
+                                    <tr class="bg-primary/10">
+                                        <th class="py-2 px-2 border-b">检测时间</th>
+                                        <th class="py-2 px-2 border-b">组别</th>
+                                        <th class="py-2 px-2 border-b">蛋壳厚度(mm)</th>
+                                        <th class="py-2 px-2 border-b">蛋壳强度(kgf)</th>
+                                        <th class="py-2 px-2 border-b">哈氏单位</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="text-center hover:bg-neutral">
+                                        <td class="py-2 px-2 border-b">第2周</td>
+                                        <td class="py-2 px-2 border-b">实验组</td>
+                                        <td class="py-2 px-2 border-b">待记录</td>
+                                        <td class="py-2 px-2 border-b">待记录</td>
+                                        <td class="py-2 px-2 border-b">待记录</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <a href="#" class="text-primary text-sm mt-2 inline-block">
+                            <i class="fa fa-download mr-1"></i>下载完整Excel模板
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 试验报告核心内容 -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-4 text-dark">2. 试验报告核心内容</h3>
+                <ul class="list-disc list-inside space-y-2 pl-4">
+                    <li>两组起始条件对比（证明随机分组有效）</li>
+                    <li>每周产蛋率曲线对比图</li>
+                    <li>蛋品质指标变化对比（试验前后变化值）</li>
+                    <li>健康指标对比（MDA、T-AOC等）</li>
+                    <li>统计分析结果（P值、显著性标记）</li>
+                    <li>结论：产品对300日龄蛋鸡是否有效延缓性能下降</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 注意事项与参考标准 -->
+        <section class="section-card">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- 注意事项 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-primary header-underline">
+                        <i class="fa fa-exclamation-triangle mr-2"></i>注意事项
+                    </h2>
+                    <ul class="space-y-3 mt-4">
+                        <li class="flex">
+                            <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-bold">300日龄的特点：</span>产蛋率已过高峰期，核心观察点是<b class="text-secondary">延缓下降</b>而非提升高峰值
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-bold">蛋壳问题：</span>此日龄蛋壳变薄、破蛋率上升是核心痛点，需重点关注
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-bold">抽样代表性：</span>四万羽规模下，务必确保抽样随机性和足够样本量
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-bold">预饲期：</span>必须进行7-10天预饲，避免前期饲料差异干扰结果
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-bold">环境一致性：</span>两组鸡舍位置、光照、通风需尽可能一致
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 参考标准 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-primary header-underline">
+                        <i class="fa fa-book mr-2"></i>参考标准
+                    </h2>
+                    <div class="bg-neutral p-4 rounded-lg mt-4">
+                        <h4 class="font-bold mb-2">国家标准</h4>
+                        <p class="mb-2">GB/T 44964-2024《蛋鸡生产性能测定技术规范》</p>
+                        <p class="text-sm text-gray-600">规定了生产性能测定的项目和方法</p>
+                    </div>
+                    <div class="bg-neutral p-4 rounded-lg mt-4">
+                        <h4 class="font-bold mb-2">检测方法参考</h4>
+                        <ul class="list-disc list-inside space-y-1 pl-2 text-sm">
+                            <li>蛋壳强度：质构仪测定</li>
+                            <li>哈氏单位：QCD系统测定</li>
+                            <li>蛋黄颜色：罗氏比色扇测定</li>
+                            <li>暗斑蛋：光照法检测</li>
+                        </ul>
+                    </div>
+                    <div class="bg-neutral p-4 rounded-lg mt-4">
+                        <h4 class="font-bold mb-2">统计分析软件推荐</h4>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            <span class="text-badge">Excel</span>
+                            <span class="text-badge">SPSS</span>
+                            <span class="text-badge">R语言</span>
+                            <span class="text-badge">GraphPad Prism</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-8 mt-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">凤雏生态农业</h3>
+                    <p class="text-sm opacity-70">300日龄蛋鸡实验测试方案 v1.0</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-sm opacity-70">设计日期：2024年</p>
+                    <p class="text-sm opacity-70">技术支持：农业养殖技术研究院</p>
+                </div>
+            </div>
+            <div class="border-t border-white/20 mt-6 pt-6 text-center text-sm opacity-70">
+                © 2024 凤雏生态农业 版权所有
+            </div>
+        </div>
+    </footer>
+
+    <!-- 图表初始化脚本 -->
+    <script>
+        // 产蛋率变化曲线图
+        const ctx = document.getElementById('layRateChart').getContext('2d');
+        const layRateChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['第1周', '第2周', '第3周', '第4周', '第5周', '第6周', '第7周', '第8周'],
+                datasets: [
+                    {
+                        label: '实验组产蛋率',
+                        data: [92, 91.5, 91, 90.5, 90, 89.5, 89, 88.5],
+                        borderColor: '#2E7D32',
+                        backgroundColor: 'rgba(46, 125, 50, 0.1)',
+                        borderWidth: 2,
+                        tension: 0.3,
+                        fill: true
+                    },
+                    {
+                        label: '对照组产蛋率',
+                        data: [92, 90.8, 89.5, 88.2, 87, 85.8, 84.5, 83.2],
+                        borderColor: '#FF8F00',
+                        backgroundColor: 'rgba(255, 143, 0, 0.1)',
+                        borderWidth: 2,
+                        tension: 0.3,
+                        fill: true
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: '300日龄蛋鸡产蛋率变化趋势预测'
+                    },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false
+                    }
+                },
+                scales: {
+                    y: {
+                        min: 80,
+                        max: 95,
+                        title: {
+                            display: true,
+                            text: '产蛋率 (%)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: '试验周次'
+                        }
+                    }
+                }
+            }
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
