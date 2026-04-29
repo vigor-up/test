@@ -108,7 +108,29 @@ img{max-width:100%;border-radius:12px;cursor:pointer}
 .img-grid img{max-width:48%;flex:1;min-width:180px}
 .back-top{position:fixed;bottom:24px;right:24px;background:var(--accent);color:var(--primary);width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transition:0.2s;box-shadow:0 2px 8px rgba(0,0,0,0.2);z-index:99}
 @media(max-width:768px){.hero-grid,.dual-grid{flex-direction:column;display:block}.dual-grid{display:grid;grid-template-columns:1fr}}
-</style>
+
+        /* ===== 全局設計系統補丁 v2 ===== */
+        html { scroll-behavior: smooth; }
+        .pain-point { border-left: none; border-top: 3px solid var(--danger); border-radius: 12px; padding: 20px 18px; transition: transform 0.2s, box-shadow 0.2s; }
+        .pain-point:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(192,57,43,0.12); }
+        .mechanism-card { transition: transform 0.2s, box-shadow 0.2s; }
+        .mechanism-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(26,58,26,0.12); }
+        table { border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(26,58,26,0.07); }
+        th { font-weight: 600; letter-spacing: 0.04em; font-size: 0.85rem; }
+        .back-to-top { box-shadow: 0 4px 16px rgba(201,168,76,0.4); transition: transform 0.2s, box-shadow 0.2s; }
+        .back-to-top:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(201,168,76,0.5); }
+        @media (max-width: 640px) { img { border-radius: 8px; } .container { padding: 0 16px; } section { padding: 36px 0; } h2 { font-size: 1.3rem; } }
+        /* Hero 全寬背景 */
+        .lang-cn section:first-of-type, .lang-tw section:first-of-type, .lang-en section:first-of-type { position: relative !important; overflow: hidden; min-height: clamp(300px,40vw,480px); }
+        .lang-cn section:first-of-type .hero-grid > div:last-child > img, .lang-tw section:first-of-type .hero-grid > div:last-child > img, .lang-en section:first-of-type .hero-grid > div:last-child > img { display: none; }
+        .lang-cn section:first-of-type .hero-grid > div:first-child, .lang-tw section:first-of-type .hero-grid > div:first-child, .lang-en section:first-of-type .hero-grid > div:first-child { flex: 1 1 100%; max-width: 700px; }
+        /* Hero BG */
+        .lang-cn section:first-of-type::before,.lang-tw section:first-of-type::before,.lang-en section:first-of-type::before{content:'';position:absolute;inset:0;background-image:url('assets/breeding-chicken-performance-improvement.jpg');background-size:cover;background-position:center 40%;opacity:0.28;z-index:0;pointer-events:none;}
+        .lang-cn section:first-of-type>*,.lang-tw section:first-of-type>*,.lang-en section:first-of-type>*{position:relative;z-index:1;}
+        </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product","name":"种鸡繁殖性能提升方案","description":"活力旺®活力得®枯草菌源蛋白酶，受精率+3-4%，孵化率+4-5%，健雏率+4-5%","image":"https://animal.feed-pet.com/assets/breeding-chicken-performance-improvement.jpg","brand":{"@type":"Brand","name":"活力旺®"},"url":"https://animal.feed-pet.com/breeder-chicken.html"}
+</script>
 </head>
 <body>
 
