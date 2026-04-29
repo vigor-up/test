@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://richtrong.com/sitemap.xml
 
-# Disallow non-content paths
+Sitemap: https://animal.feed-pet.com/sitemap.xml
+
 Disallow: /.github/
