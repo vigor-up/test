@@ -1099,7 +1099,7 @@ tr:nth-child(even) td { background:var(--paper); }
 <nav class="nav">
   <div class="nav-inner">
     <div class="nav-brand">
-      <img src="assets/logo.png" alt="活力旺®" class="nav-logo" onerror="this.style.display='none'" loading="lazy">
+      <img src="assets/logo.png" alt="活力旺®" class="nav-logo no-lightbox" onerror="this.style.display='none'" loading="lazy">
       <span class="nav-name">活力旺®</span>
     </div>
     <div class="lang-group">
@@ -1254,7 +1254,7 @@ tr:nth-child(even) td { background:var(--paper); }
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <img src="assets/logo.png" alt="活力旺®" class="footer-logo" onerror="this.style.display='none'">
+          <img src="assets/logo.png" alt="活力旺®" class="footer-logo no-lightbox" onerror="this.style.display='none'">
           <div>
             <div class="footer-brand-text">活力旺® VitalBoost Plus</div>
             <div class="footer-tagline">PRECISION ANIMAL NUTRITION</div>
@@ -1409,7 +1409,7 @@ tr:nth-child(even) td { background:var(--paper); }
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <img src="assets/logo.png" alt="活力旺®" class="footer-logo" onerror="this.style.display='none'">
+          <img src="assets/logo.png" alt="活力旺®" class="footer-logo no-lightbox" onerror="this.style.display='none'">
           <div>
             <div class="footer-brand-text">活力旺® VitalBoost Plus</div>
             <div class="footer-tagline">PRECISION ANIMAL NUTRITION</div>
@@ -1564,7 +1564,7 @@ tr:nth-child(even) td { background:var(--paper); }
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <img src="assets/logo.png" alt="活力旺®" class="footer-logo" onerror="this.style.display='none'">
+          <img src="assets/logo.png" alt="活力旺®" class="footer-logo no-lightbox" onerror="this.style.display='none'">
           <div>
             <div class="footer-brand-text">活力旺® VitalBoost Plus</div>
             <div class="footer-tagline">PRECISION ANIMAL NUTRITION</div>
@@ -1605,7 +1605,7 @@ id="backToTop"><i class="fas fa-chevron-up"></i></div>
     btt.classList.toggle('visible', window.scrollY > 400);
   }, {passive:true});
   document.addEventListener('click', function(e){
-    if(e.target.tagName==='IMG' && e.target.id!=='lb-img' && !e.target.classList.contains('nav-logo') && !e.target.classList.contains('footer-logo')){
+    if(e.target.tagName==='IMG' && e.target.id!=='lb-img' && !e.target.classList.contains('nav-logo') && !e.target.classList.contains('footer-logo') && !e.target.classList.contains('no-lightbox')){
       var lb = document.getElementById('lightbox');
       document.getElementById('lb-img').src = e.target.src;
       lb.classList.add('active');
