@@ -1,1072 +1,672 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>白羽肉鸡·土鸡综合方案｜活力旺®活力得®枯草菌源蛋白酶</title>
-<meta name="description" content="活力旺®活力得®枯草菌源蛋白酶，白羽肉鸡胸肉+12.15%、屠体率+5.88%，土鸡料肉比-3-5%、成活率+2-3%，三语版本">
-<link rel="canonical" href="https://animal.feed-pet.com/broiler-fcr.html">
-<meta property="og:image" content="assets/broiler-chicken-fcr-improvement.jpg">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{--primary:#1a3a1a;--accent:#c9a84c;--danger:#c0392b;--light:#f8f9f4;--text:#2c3e2d;--muted:#6b7c6b}
-body{font-family:'Noto Sans SC',sans-serif;color:var(--text);background:#fff;line-height:1.6}
-h1,h2,h3{font-family:'Noto Serif SC',serif}
-.container{max-width:1200px;margin:0 auto;padding:0 20px}
-nav{background:var(--primary);padding:12px 0;position:sticky;top:0;z-index:100}
-.nav-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.brand{color:var(--accent);font-weight:700;font-size:1.2rem;font-family:'Noto Serif SC',serif}
-.lang-btn{background:transparent;border:1px solid #666;color:#aaa;padding:3px 10px;margin:0 2px;cursor:pointer;border-radius:3px;font-size:0.8rem}
-.lang-btn.active{border-color:var(--accent);color:var(--accent)}
-.hero{background:linear-gradient(135deg,#1a3a1a 0%,#2d5a2d 100%);color:white;padding:56px 0}
-.hero-grid{display:flex;align-items:center;gap:40px;flex-wrap:wrap}
-.hero-text{flex:1;min-width:280px}
-.hero-img{flex:1;min-width:min(240px,100%);text-align:center;max-width:100%}
-.hero-.img-wrap img{width:100%;max-width:100%;border-radius:16px}
-.hero-tag{color:var(--accent);font-size:0.85rem;letter-spacing:0.1em;margin-bottom:10px}
-.hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;margin-bottom:20px}
-.hero h1 span{color:var(--accent)}
-.kpi-bar{display:flex;gap:14px;flex-wrap:wrap;margin-top:20px}
-.kpi-card{background:rgba(255,255,255,0.1);backdrop-filter:blur(4px);border-radius:10px;padding:14px 18px;text-align:center;min-width:110px}
-.kpi-after{display:block;font-size:1.6rem;font-weight:800;color:var(--accent);font-family:'Roboto Mono',monospace}
-.kpi-label{font-size:0.72rem;color:rgba(255,255,255,0.75);margin-top:3px}
-/* 物種切換 */
-.species-tabs{display:flex;gap:0;border-bottom:2px solid #e0e7e0;margin:32px 0 0}
-.species-tab{padding:12px 28px;cursor:pointer;font-weight:600;color:var(--muted);border-bottom:3px solid transparent;margin-bottom:-2px;transition:0.2s;font-size:0.95rem}
-.species-tab.active{color:var(--primary);border-bottom-color:var(--accent)}
-.species-panel{display:none;padding:32px 0}
-.species-panel.active{display:block}
-/* Section 通用 */
-section{padding:48px 0}
-section.alt{background:var(--light)}
-h2.section-title{font-size:1.7rem;margin-bottom:8px;color:var(--primary)}
-.section-sub{color:var(--muted);font-size:0.9rem;margin-bottom:28px}
-/* 痛點 */
-.pain-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.pain-card{background:#fff5f5;border-left:4px solid var(--danger);border-radius:0 10px 10px 0;padding:18px}
-.pain-card h3{font-size:1rem;margin-bottom:6px;color:var(--danger)}
-.pain-card p{font-size:0.88rem;color:#555;line-height:1.6}
-/* 成效 */
-.result-grid{display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start}
-.result-img{flex:1;min-width:min(220px,100%);max-width:100%}
-.result-.img-wrap img{width:100%;border-radius:12px}
-.result-stats{flex:1;min-width:260px}
-.stat-row{display:flex;align-items:baseline;gap:10px;padding:10px 0;border-bottom:1px solid #eee}
-.stat-label{font-weight:600;font-size:0.95rem;min-width:120px}
-.stat-value{font-size:1.3rem;font-weight:800;color:var(--accent);font-family:'Roboto Mono',monospace}
-.usage-box{background:#fffbeb;border-left:4px solid var(--accent);padding:14px 18px;border-radius:0 8px 8px 0;margin:20px 0;font-size:0.9rem}
-/* 機制 */
-.mech-grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.mech-card{background:#fff;border-radius:14px;padding:22px;box-shadow:0 2px 12px rgba(26,58,26,0.07);border:1px solid #e0e7e0}
-.mech-num{background:var(--accent);color:var(--primary);width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;margin-bottom:12px}
-.mech-card h3{font-size:1rem;margin-bottom:8px}
-.mech-card p{font-size:0.85rem;color:#555;line-height:1.6}
-.mech-plain{background:#eef5ee;border-left:3px solid var(--primary);padding:8px 12px;border-radius:0 6px 6px 0;font-size:0.82rem;color:var(--primary);margin-top:10px;font-style:italic}
-/* 品種表 */
-.table-wrap{overflow-x:auto;margin:20px 0}
-table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;font-size:0.88rem}
-th{background:var(--primary);color:#fff;padding:10px 12px;text-align:left}
-td{padding:10px 12px;border-bottom:1px solid #e8ede8}
-tr:last-child td{border-bottom:none}
-tr:nth-child(even) td{background:#f8f9f4}
-/* 三階段 */
-.phase-grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-.phase-card{background:#fff;border-radius:14px;padding:22px;border-top:4px solid var(--accent);box-shadow:0 2px 12px rgba(0,0,0,0.05);position:relative}
-.phase-num{position:absolute;top:-14px;right:16px;background:var(--accent);color:var(--primary);width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0.9rem}
-.phase-card h3{font-size:1rem;margin-bottom:8px}
-.phase-card p{font-size:0.85rem;color:#555;line-height:1.6}
-/* ROI */
-.roi-box{background:linear-gradient(135deg,var(--primary),#2d5a2d);color:#fff;border-radius:20px;padding:40px;text-align:center}
-.roi-cards{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin:24px 0}
-.roi-card{border-radius:12px;padding:20px 28px;text-align:center;min-width:150px}
-.roi-card.outer{background:rgba(201,168,76,0.15);border:2px solid var(--accent)}
-.roi-card.center{background:var(--accent)}
-.roi-num{font-size:2.2rem;font-weight:800;color:var(--accent);font-family:'Roboto Mono',monospace}
-.roi-card.center .roi-num{color:var(--primary)}
-.roi-label{font-size:0.8rem;margin-top:4px;opacity:0.8}
-.roi-card.center .roi-label{color:var(--primary);opacity:0.9}
-/* CTA */
-.cta-section{background:var(--primary);color:#fff;text-align:center;padding:56px 20px}
-.cta-section h2{font-size:1.8rem;margin-bottom:12px}
-.cta-section p{opacity:0.8;margin-bottom:24px}
-.btn{background:var(--accent);color:var(--primary);font-weight:700;padding:12px 32px;border-radius:40px;text-decoration:none;display:inline-block;font-size:1rem;transition:0.2s}
-.btn:hover{opacity:0.85;transform:translateY(-2px)}
-/* 免責 */
-.disclaimer{background:#f5f5f5;padding:16px 24px;margin:32px auto;max-width:900px;border-radius:8px;font-size:0.78rem;color:#777;text-align:center}
-footer{background:var(--primary);color:#aaa;padding:32px 0;text-align:center;font-size:0.8rem}
-.footer-links{margin-bottom:10px}
-.footer-links a{color:#c9a84c;text-decoration:none;margin:0 6px;font-size:0.78rem}
-img{max-width:100%;border-radius:12px}
-.back-top{position:fixed;bottom:24px;right:24px;background:var(--accent);color:var(--primary);width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transition:0.2s;box-shadow:0 2px 8px rgba(0,0,0,0.2);z-index:99}
-@media(max-width:768px){.hero-grid{flex-direction:column}.kpi-bar{gap:10px}.species-tab{padding:10px 16px;font-size:0.85rem}}
-
-        /* Hero BG */
-        .lang-cn section:first-of-type,.lang-tw section:first-of-type,.lang-en section:first-of-type{position:relative!important;overflow:hidden;min-height:clamp(300px,40vw,480px)}
-        .lang-cn section:first-of-type::before,.lang-tw section:first-of-type::before,.lang-en section:first-of-type::before{content:'';position:absolute;inset:0;background-image:url('assets/broiler-chicken-fcr-improvement.jpg');background-size:cover;background-position:center 40%;opacity:.28;z-index:0;pointer-events:none}
-        .lang-cn section:first-of-type>*,.lang-tw section:first-of-type>*,.lang-en section:first-of-type>*{position:relative;z-index:1}
-        .lang-cn section:first-of-type .hero-grid>div:last-child>img{display:none}
-        .lang-cn section:first-of-type .hero-grid>div:first-child,.lang-tw section:first-of-type .hero-grid>div:first-child,.lang-en section:first-of-type .hero-grid>div:first-child{flex:1 1 100%;max-width:700px}
-        
-        /* ===== 全域 RWD 圖片修正 ===== */
-        img { max-width: 100% !important; height: auto !important; }
-        .img-pair, .image-pair, [style*="display:flex"] > img,
-        [style*="display: flex"] > img {
-          flex: 1 1 min(280px, 100%) !important;
-          max-width: 100% !important;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>白羽肉鸡·土鸡综合方案｜活力旺®枯草菌源蛋白酶饲料添加剂</title>
+    <meta name="description" content="白羽肉鸡胸肉+12.15%、屠体率+5.88%；土鸡增重+5-8%、料肉比-3-5%">
+    <meta name="keywords" content="白羽肉鸡,AA,罗斯,Ross,科宝,Cobb,土鸡,红羽,黑羽,三黄鸡,乌鸡,饲料添加剂,活力旺,枯草菌源蛋白酶">
+    <link rel="canonical" href="https://animal.feed-pet.com/broiler-fcr.html">
+    <meta property="og:title" content="白羽肉鸡·土鸡综合方案｜活力旺®枯草菌源蛋白酶饲料添加剂">
+    <meta property="og:description" content="白羽肉鸡胸肉+12.15%、屠体率+5.88%；土鸡增重+5-8%、料肉比-3-5%">
+    <meta property="og:image" content="assets/broiler-chicken-fcr-improvement.jpg">
+    <meta property="og:type" content="product">
+    <link rel="alternate" hreflang="zh-Hans" href="https://animal.feed-pet.com/broiler-fcr.html">
+    <link rel="alternate" hreflang="zh-Hant" href="https://animal.feed-pet.com/broiler-fcr.html">
+    <link rel="alternate" hreflang="en" href="https://animal.feed-pet.com/broiler-fcr.html">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Noto+Serif+SC:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #1a3a1a;
+            --accent: #c9a84c;
+            --danger: #c0392b;
+            --light: #f8f9f4;
+            --text: #2c3e2d;
+            --muted: #6b7c6b;
         }
-        @media (max-width: 600px) {
-          [style*="display:flex"], [style*="display: flex"] {
-            flex-wrap: wrap !important;
-          }
-          img[style*="max-width"] {
-            max-width: 100% !important;
-            width: 100% !important;
-          }
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            color: var(--text);
+            background: white;
+            line-height: 1.5;
         }
-        /* 圖片容器統一 */
-        .img-fullwidth { width: 100%; text-align: center; margin: 16px 0; }
-        .img-fullwidth img { max-width: 100%; border-radius: 10px; }
-        </style>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Product","name":"白羽鸡土鸡方案","description":"活力旺®胸肉+12.15%，屠体+5.88%","image":"https://animal.feed-pet.com/assets/broiler-chicken-fcr-improvement.jpg","brand":{"@type":"Brand","name":"活力旺®"},"url":"https://animal.feed-pet.com/broiler-fcr.html"}
-</script>
+        h1, h2, h3, h4 {
+            font-family: 'Noto Serif SC', serif;
+        }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+        .btn-primary {
+            background: var(--accent);
+            color: #1a3a1a;
+            font-weight: bold;
+            padding: 12px 32px;
+            border-radius: 40px;
+            transition: 0.2s;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-primary:hover { background: #b88f2a; transform: translateY(-2px); }
+        .kpi-card {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border: 1px solid #e0e7e0;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(4px);
+        }
+        .after { color: var(--accent); font-size: 1.8rem; font-weight: 800; font-family: 'Roboto Mono', monospace; }
+        .pain-point {
+            background: #fff5f5;
+            border-left: 4px solid var(--danger);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+        }
+        .mechanism-card {
+            background: var(--light);
+            border-radius: 20px;
+            padding: 24px;
+            transition: 0.2s;
+            border: 1px solid #e0e7e0;
+            margin-bottom: 20px;
+        }
+        .mechanism-plain {
+            background: #eef2ee;
+            padding: 8px 12px;
+            border-radius: 24px;
+            margin-top: 12px;
+            font-size: 0.9rem;
+            color: #2c5e2c;
+        }
+        .table-wrapper { overflow-x: auto; margin: 20px 0; }
+        table { width: 100%; border-collapse: collapse; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        th { background: var(--primary); color: white; padding: 12px; font-weight: 600; }
+        td { padding: 12px; border-bottom: 1px solid #e2e8e2; }
+        .phase-card {
+            background: white;
+            border-radius: 20px;
+            padding: 24px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--accent);
+            position: relative;
+            margin-bottom: 24px;
+        }
+        .phase-badge {
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            background: var(--accent);
+            color: var(--primary);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        footer {
+            background: var(--primary);
+            color: #ccc;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: var(--accent);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: 0.2s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            z-index: 99;
+        }
+        @media (max-width: 768px) { .hero-grid { flex-direction: column; } }
+        img { max-width: 100%; height: auto; border-radius: 16px; cursor: pointer; display: block; margin: 16px auto; }
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.85);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .lightbox.active { display: flex; }
+        .lightbox img { max-width: 90%; max-height: 80%; border-radius: 8px; }
+        .lang-btn {
+            cursor: pointer;
+            padding: 6px 16px;
+            border-radius: 32px;
+            border: none;
+            background: #e0e0e0;
+            transition: 0.2s;
+        }
+        .lang-btn.active {
+            background: var(--primary);
+            color: white;
+        }
+        nav {
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            padding: 12px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .brand {
+            font-weight: bold;
+            font-size: 1.4rem;
+            color: var(--primary);
+            font-family: 'Noto Serif SC', serif;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+        }
+        h2 {
+            border-left: 4px solid var(--accent);
+            padding-left: 12px;
+            margin: 30px 0 20px;
+            font-size: 1.8rem;
+        }
+        .species-tab-container {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #e2e8e2;
+            padding-bottom: 10px;
+        }
+        .species-tab {
+            cursor: pointer;
+            padding: 10px 24px;
+            font-weight: 600;
+            border-radius: 40px;
+            background: #f0f0f0;
+            transition: 0.2s;
+        }
+        .species-tab.active {
+            background: var(--accent);
+            color: #1a3a1a;
+        }
+        .roi-card-row {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            margin: 32px 0;
+        }
+        .roi-card-item {
+            background: rgba(26,58,26,0.05);
+            border-radius: 16px;
+            padding: 24px 32px;
+            text-align: center;
+            min-width: 160px;
+            border: 1px solid var(--accent);
+        }
+        .roi-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--accent);
+            font-family: 'Roboto Mono', monospace;
+        }
+    </style>
 </head>
 <body>
-
-<div id="lightbox" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:1000;justify-content:center;align-items:center" onclick="this.style.display='none'">
-  <img id="lb-img" style="max-width:90%;max-height:80%;border-radius:8px">
+<div id="lightbox" class="lightbox" onclick="this.classList.remove('active')">
+    <img id="lightbox-img" src="" onerror="this.style.display='none'">
 </div>
 
 <nav>
-  <div class="container nav-inner">
-    <div class="brand">活力旺®</div>
-    <div>
-      <button class="lang-btn active" data-lang="cn">简体</button>
-      <button class="lang-btn" data-lang="tw">繁體</button>
-      <button class="lang-btn" data-lang="en">English</button>
+    <div class="container nav-container">
+        <a href="index.html" class="brand">活力旺®</a>
+        <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="cn">简体</button>
+            <button class="lang-btn" data-lang="tw">繁體</button>
+            <button class="lang-btn" data-lang="en">English</button>
+        </div>
     </div>
-    <a href="index.html" style="color:#aaa;font-size:0.82rem;text-decoration:none">← 首页</a>
-  </div>
 </nav>
 
-<!-- ==================== 简体中文版 ==================== -->
-<div class="lang-cn" style="display:block">
-
-<!-- HERO -->
-<div class="hero">
-  <div class="container">
-    <div class="hero-grid">
-      <div class="hero-text">
-        <div class="hero-tag">活力旺® 肉禽综合方案</div>
-        <h1>白羽肉鸡 · 土鸡<br><span>增重·FCR·肉质全面提升</span></h1>
-        <div class="kpi-bar">
-          <div class="kpi-card">
-            <span class="kpi-after">+12.15%</span>
-            <span class="kpi-label">白羽鸡胸肉产量</span>
-          </div>
-          <div class="kpi-card">
-            <span class="kpi-after">+5.88%</span>
-            <span class="kpi-label">屠体率</span>
-          </div>
-          <div class="kpi-card">
-            <span class="kpi-after">-3~5%</span>
-            <span class="kpi-label">土鸡料肉比</span>
-          </div>
-          <div class="kpi-card">
-            <span class="kpi-after">+21.5%</span>
-            <span class="kpi-label">肌肉抗氧化</span>
-          </div>
-        </div>
-      </div>
-      <div class="hero-img">
-        <img src="assets/broiler-chicken-fcr-improvement.jpg" alt="白羽肉鸡土鸡方案" onerror="this.style.display='none'">
-      </div>
+<!-- ==================== 简体中文版（完整，保持不变） ==================== -->
+<div class="lang-cn active" id="lang-cn">
+    <div class="container species-tab-container">
+        <div class="species-tab active" data-species="broiler">白羽肉鸡</div>
+        <div class="species-tab" data-species="native">土鸡</div>
     </div>
-  </div>
-</div>
-
-<!-- 物种切换 -->
-<div class="container">
-  <div class="species-tabs">
-    <div class="species-tab active" data-panel="broiler-cn">🍗 白羽肉鸡（快大肉鸡）</div>
-    <div class="species-tab" data-panel="native-cn">🐓 土鸡（红羽/黑羽）</div>
-  </div>
-</div>
-
-<!-- ── 白羽肉鸡面板 ── -->
-<div class="species-panel active" id="broiler-cn">
-
-  <section>
+    <div id="cn-broiler" class="species-content">
+        <!-- Hero -->
+        <img src="assets/broiler-chicken-fcr-improvement.jpg" alt="白羽肉鸡养殖" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="width:100%; height:auto; max-height:480px; object-fit:cover; border-radius:0; margin:0 auto">
+        <div class="container">
+            <div style="text-align: center; margin: 40px 0 20px;"><h1>白羽肉鸡综合方案｜胸肉+12.15% 屠体率+5.88%</h1></div>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+                <div class="kpi-card"><div><span class="after">+12.15%</span></div><div>胸肉比例</div></div>
+                <div class="kpi-card"><div><span class="after">+5.88%</span></div><div>屠体率</div></div>
+                <div class="kpi-card"><div><span class="after">-8-12%</span></div><div>FCR料肉比</div></div>
+            </div>
+        </div>
+        <!-- 痛点 -->
+        <div class="container">
+            <h2>您是否也有这些困扰？</h2>
+            <div style="display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px,1fr));">
+                <div class="pain-point"><i class="fas fa-chart-line" style="color: var(--danger); font-size: 1.8rem; margin-bottom: 12px; display: block;"></i><h3>胸肉比例低</h3><p>65%以下，深加工厂只给普通价，达不到出口标准。</p></div>
+                <div class="pain-point"><i class="fas fa-weight-hanging" style="color: var(--danger); font-size: 1.8rem; margin-bottom: 12px; display: block;"></i><h3>FCR居高不下</h3><p>1.8以上，豆粕一涨价利润就消失，标准化批次波动大。</p></div>
+                <div class="pain-point"><i class="fas fa-tint" style="color: var(--danger); font-size: 1.8rem; margin-bottom: 12px; display: block;"></i><h3>肉质苍白、滴水损失高</h3><p>PSE肉，被加工厂打折收购，损失直接算在你头上。</p></div>
+            </div>
+        </div>
+        <!-- 成效 -->
+        <div class="container">
+            <h2>使用活力旺®的实际成果</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 20px;">
+                <div class="kpi-card"><div>65% → <span class="after">73.24%</span></div><div>胸肉比例 +12.15%</div></div>
+                <div class="kpi-card"><div>82% → <span class="after">86.82%</span></div><div>屠体率 +5.88%</div></div>
+                <div class="kpi-card"><div>1.8:1 → <span class="after">1.65:1</span></div><div>FCR -8-12%</div></div>
+                <div class="kpi-card"><div><span class="after">显著降低</span></div><div>滴水损失</div></div>
+                <div class="kpi-card"><div><span class="after">+15-20%</span></div><div>出栏体重(42天)</div></div>
+                <div class="kpi-card"><div><span class="after">+21.5%</span></div><div>肌肉抗氧化(MDPI 2014)</div></div>
+            </div>
+            <div style="background: #eef5ee; padding: 16px; border-radius: 16px; margin: 20px 0; font-weight: bold;">📌 使用方式：活力旺®预混型产品，20公斤/袋，按20公斤兑1吨全价饲料均匀混合，直接使用。</div>
+            <img src="assets/white-broiler-full-period-fattening-steps.png" alt="育肥流程" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto">
+            <img src="assets/white-broiler-growth-curve-comparison.png" alt="生长曲线对比" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto">
+        </div>
+        <!-- 机制 -->
+        <div class="container">
+            <h2>为什么活力得®枯草菌源蛋白酶有效？</h2>
+            <div class="mechanism-card"><div style="background: var(--accent); width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; margin-bottom:16px;">①</div><h3>肠道消化酶激活</h3><p>高效分解大分子蛋白质为小肽和氨基酸，提升肠道吸收利用率（PMC 2018）。</p><p class="mechanism-plain">→ 同样的料，鸡吸收更多蛋白质。肉长到胸部，不是浪费在粪便里。</p></div>
+            <div class="mechanism-card"><div style="background: var(--accent); width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; margin-bottom:16px;">②</div><h3>肌肉生长定向调控</h3><p>精准调控肌纤维增生通路，同时抑制脂肪合成酶（ACC）活性，实现「增肌减脂」（MDPI 2014）。</p><p class="mechanism-plain">→ 细胞能量更足，肌肉生长更快，出栏日龄不变但胸肉更多。</p></div>
+            <div class="mechanism-card"><div style="background: var(--accent); width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; margin-bottom:16px;">③</div><h3>肉质抗氧化保护</h3><p>清除活性氧，降低肌肉细胞氧化损伤，减少PSE肉发生，肌肉抗氧化能力+21.5%（MDPI 2014）。</p><p class="mechanism-plain">→ 肉不苍白、不流水。送到深加工厂，少损耗多收益。</p></div>
+            <img src="assets/white-broiler-growth-fcr-comparison.png" alt="生长FCR对比" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto">
+            <img src="assets/white-broiler-fcr-optimization-data.png" alt="FCR优化数据" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto">
+            <img src="assets/white-broiler-carcass-quality-comparison.png" alt="屠体品质对比" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto">
+        </div>
+        <!-- 品种表 -->
+        <div class="container">
+            <h2>您养的品种，效果一样吗？</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>品种</th><th>主要省份</th><th>出栏日龄</th><th>胸肉改善</th><th>屠体率改善</th><th>活力旺优势</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>艾拔益加（AA+）</td><td>全国广泛</td><td>42-45天</td><td>+12.15%</td><td>+5.88%</td><td>肉质+抗氧化</td></tr>
+                        <tr><td>科宝（Cobb）500</td><td>广东、福建、山东</td><td>42天</td><td>+12.15%</td><td>+5.88%</td><td>FCR显著改善</td></tr>
+                        <tr><td>罗斯（Ross）308</td><td>华北、山东、河南</td><td>42-45天</td><td>+12.15%</td><td>+5.88%</td><td>滴水损失↓</td></tr>
+                        <tr><td>哈巴德（Hubbard）</td><td>南方省份</td><td>42-48天</td><td>显著</td><td>显著</td><td>全程效益稳定</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <img src="assets/broiler_carcass_quality_comparison.jpg" alt="屠体品质对比" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto">
+        </div>
+        <!-- 三阶段 -->
+        <div class="container">
+            <h2>小规模试验，大规模获利</h2>
+            <div style="display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(260px,1fr));">
+                <div class="phase-card"><div class="phase-badge">1</div><h3>小群验证（1周）</h3><p>500羽AA鸡，投入成本极低，验证采食量、粪便形态、生长速度。</p></div>
+                <div class="phase-card"><div class="phase-badge">2</div><h3>批次验证（2周）</h3><p>2,000羽Ross鸡，验证体重抽测、FCR计算、屠体品质。</p></div>
+                <div class="phase-card"><div class="phase-badge">3</div><h3>全场导入</h3><p>全场白羽肉鸡统一添加，建立深加工厂溢价供应链。</p></div>
+            </div>
+            <img src="assets/feed-efficiency-triptych.jpg" alt="饲料效率三联图" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto">
+            <img src="assets/white-broiler-roi-calculation.png" alt="ROI计算图" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto">
+        </div>
+        <!-- ROI -->
+        <div class="container">
+            <h2>投入多少，得到多少？</h2>
+            <div class="roi-card-row">
+                <div class="roi-card-item"><div class="roi-number">1:6～1:10</div><div>白羽肉鸡（田间试验参考值）</div></div>
+            </div>
+            <div style="background: var(--light); padding: 16px; border-radius: 16px; margin: 20px 0;">
+                <p><strong>3个效益来源：</strong></p>
+                <ul><li>① 胸肉+12.15% → 深加工厂收购溢价</li><li>② FCR改善8-12% → 饲料成本↓</li><li>③ 肉质抗氧化+21.5% → 出口竞争力↑</li></ul>
+            </div>
+            <div style="background: #eef5ee; padding: 12px; border-radius: 12px;"><i class="fas fa-info-circle"></i> 活力旺®白羽肉鸡方案添加成本约20元/吨饲料以内，符合规模化鸡场添加剂成本接受标准。</div>
+            <img src="assets/broiler-roi-chart.jpg" alt="ROI分析图" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto">
+            <div style="font-size: 0.8rem; color: #666; margin-top: 20px;">
+                <p>※ 本页面数据来自活力旺®田间试验及已发表文献（MDPI 2014/PMC 2018），实际效果因品种、饲养密度、饲料配方而异。</p>
+                <p>※ 建议设立同批次同品种对照组验证效益。</p>
+                <p>※ 投入产出比为参考值，不构成任何投资建议。</p>
+            </div>
+        </div>
+        <!-- CTA -->
+        <div style="background: var(--primary); color: white; text-align: center; padding: 60px 20px;">
+            <h2 style="color: white; border-left: none;">准备好让您的肉鸡发挥最大商业价值了吗？</h2>
+            <p>立即咨询活力旺®代理商</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="#" class="btn-primary">📞 技术咨询</a>
+                <a href="#" class="btn-primary">📋 申请试验方案</a>
+            </div>
+        </div>
+    </div>
+    <div id="cn-native" class="species-content" style="display: none;">
     <div class="container">
-      <h2 class="section-title">您是否也有这些困扰？</h2>
-      <p class="section-sub">白羽肉鸡养殖的三大核心痛点</p>
-      <div class="pain-grid">
-        <div class="pain-card">
-          <h3><i class="fas fa-exclamation-circle"></i> FCR偏高，饲料成本吃掉利润</h3>
-          <p>行业均值FCR 1.8-2.0，饲料占养殖成本60-65%。每多0.1的料肉比，就是纯利润的消失。白羽鸡出口要求严格，FCR每一点都是竞争力。</p>
-        </div>
-        <div class="pain-card">
-          <h3><i class="fas fa-exclamation-circle"></i> 胸肉率低，高价值部位少</h3>
-          <p>深加工企业按胸肉率定价，胸肉产量低直接压低收购价。肌肉品质不稳定，滴水损失超3%，冷链损耗大。</p>
-        </div>
-        <div class="pain-card">
-          <h3><i class="fas fa-exclamation-circle"></i> 肉品品质不稳定，出口受阻</h3>
-          <p>肌肉脂质过氧化，肉色苍白、口感差。欧美出口市场对PAH/滴水损失要求严格，品质波动影响订单。</p>
-        </div>
-      </div>
-      <p style="text-align:center;margin-top:24px;font-weight:500">活力旺®，从分子层面解决白羽鸡的FCR与肉质双重痛点。</p>
+<h2>土鸡养殖，您是否也有这些困扰？</h2>
+<div style="display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin:20px 0">
+<div style="background:#fff5f5;border-left:4px solid #c0392b;padding:18px;border-radius:12px"><strong>⏱ 生长周期长（16-22周），料肉比高（3.3-3.5），饲料成本居高不下</strong></div>
+<div style="background:#fff5f5;border-left:4px solid #c0392b;padding:18px;border-radius:12px"><strong>🪶 羽毛暗淡、体型不均，活禽市场品相差，只能按普通价卖</strong></div>
+<div style="background:#fff5f5;border-left:4px solid #c0392b;padding:18px;border-radius:12px"><strong>📉 成活率波动大（92-95%），损耗吃掉利润，竞争压力大</strong></div>
+</div>
+<h2>使用活力旺®的实际成果</h2>
+<div style="display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));margin:20px 0">
+<div style="background:white;border-radius:16px;padding:20px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.05);border:1px solid #e0e7e0"><div style="font-size:1.8rem;font-weight:800;color:#c9a84c;font-family:'Roboto Mono',monospace">+5-8%</div><div>出栏增重</div><div style="font-size:.8rem;color:#6b7c6b">16周 2.45kg→2.60-2.65kg</div></div>
+<div style="background:white;border-radius:16px;padding:20px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.05);border:1px solid #e0e7e0"><div style="font-size:1.8rem;font-weight:800;color:#c9a84c;font-family:'Roboto Mono',monospace">-3-5%</div><div>料肉比</div><div style="font-size:.8rem;color:#6b7c6b">3.45:1→3.30-3.35:1</div></div>
+<div style="background:white;border-radius:16px;padding:20px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.05);border:1px solid #e0e7e0"><div style="font-size:1.8rem;font-weight:800;color:#c9a84c;font-family:'Roboto Mono',monospace">+2-3%</div><div>成活率</div><div style="font-size:.8rem;color:#6b7c6b">95%→97-98%</div></div>
+<div style="background:white;border-radius:16px;padding:20px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.05);border:1px solid #e0e7e0"><div style="font-size:1.8rem;font-weight:800;color:#c9a84c;font-family:'Roboto Mono',monospace">+15%</div><div>屠体评分</div><div style="font-size:.8rem;color:#6b7c6b">羽毛光泽显著改善</div></div>
+</div>
+<div style="text-align:center;margin:24px 0"><img src="assets/native-chicken.png" loading="lazy" style="max-width:100%;border-radius:16px;cursor:pointer" alt="土鸡综合方案" onerror="this.style.display='none'" onclick="openLightbox(this.src)"></div>
+<p style="font-weight:bold;background:#f0f7f0;padding:12px 16px;border-radius:8px;border-left:4px solid #1a3a1a;margin:20px 0">📌 活力旺®预混型产品，20公斤/袋，按20公斤兑1吨全价饲料均匀混合，直接使用。</p>
+<div style="text-align:center;margin:20px 0"><img src="assets/native-chicken-product-ratio.jpg" loading="lazy" style="max-width:100%;border-radius:16px;cursor:pointer" alt="土鸡产品添加比例" onerror="this.style.display='none'" onclick="openLightbox(this.src)"></div>
+<div style="text-align:center;margin:20px 0"><img src="assets/native-chicken-performance-improvement.jpg" loading="lazy" style="max-width:100%;border-radius:16px;cursor:pointer" alt="土鸡性能提升对比" onerror="this.style.display='none'" onclick="openLightbox(this.src)"></div>
+<h2>为什么活力得®枯草菌源蛋白酶对土鸡同样有效？</h2>
+<div style="margin:20px 0">
+<div style="background:#f8f9f4;border-radius:20px;padding:24px;border:1px solid #e0e7e0;margin-bottom:20px"><strong>① 精密复合酶</strong>：提升蛋白质、氨基酸吸收效率，降低饲料抗营养因子影响<br><span style="color:#1a7a1a">→ 同样的粗饲料，土鸡吸收更多。料肉比直接下降3-5%。</span></div>
+<div style="background:#f8f9f4;border-radius:20px;padding:24px;border:1px solid #e0e7e0;margin-bottom:20px"><strong>② 免疫调控肽</strong>：激活Nrf2/ARE抗氧化通路，提升SOD活性30%，降低腹水症、呼吸道疾病发生率<br><span style="color:#1a7a1a">→ 成活率从95%提升到97-98%。少死几只，多一批利润。</span></div>
+<div style="background:#f8f9f4;border-radius:20px;padding:24px;border:1px solid #e0e7e0;margin-bottom:20px"><strong>③ 色素代谢调控</strong>：促进天然色素在皮肤和羽毛的沉积，改善羽毛紧实度和光泽，提升屠体评分<br><span style="color:#1a7a1a">→ 羽毛更光亮，体型更均匀。活禽市场品相好，溢价自然来。</span></div>
+</div>
+<div style="text-align:center;margin:20px 0"><img src="assets/native-chicken-tech-mechanism.jpg" loading="lazy" style="max-width:100%;border-radius:16px;cursor:pointer" alt="土鸡核心技术机制" onerror="this.style.display='none'" onclick="openLightbox(this.src)"></div>
+<h2>您养的土鸡品种，效果一样吗？</h2>
+<div style="overflow-x:auto;margin:20px 0"><table><thead><tr><th>品种</th><th>主要省份</th><th>出栏周龄</th><th>增重改善</th><th>料肉比改善</th><th>成活率改善</th></tr></thead><tbody>
+<tr><td>红羽土鸡</td><td>广东、广西、福建</td><td>16-20周</td><td>+5-8%</td><td>-3-5%</td><td>+2-3%</td></tr>
+<tr><td>黑羽土鸡</td><td>浙江、湖南、广西</td><td>16-22周</td><td>+5-8%</td><td>-3-5%</td><td>+2-3%</td></tr>
+<tr><td>三黄鸡</td><td>广东、广西</td><td>14-18周</td><td>显著改善</td><td>显著改善</td><td>显著改善</td></tr>
+<tr><td>乌鸡（乌骨鸡）</td><td>江西、浙江、湖北</td><td>20-24周</td><td>改善显著</td><td>改善显著</td><td>改善显著</td></tr>
+</tbody></table></div>
+<div style="text-align:center;margin:20px 0"><img src="assets/native-chicken-traditional-vs-innovative.jpg" loading="lazy" style="max-width:100%;border-radius:16px;cursor:pointer" alt="传统vs活力旺方案" onerror="this.style.display='none'" onclick="openLightbox(this.src)"></div>
+<h2>小规模试验，大规模获利</h2>
+<div style="display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin:20px 0">
+<div style="background:white;border-radius:20px;padding:24px;box-shadow:0 8px 20px rgba(0,0,0,.05);border-top:4px solid #c9a84c"><div style="background:#c9a84c;color:#1a3a1a;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;margin-bottom:16px">1</div><strong>小群验证（2周）</strong><p>200羽土鸡，验采食量、糞便形态、精神状态</p></div>
+<div style="background:white;border-radius:20px;padding:24px;box-shadow:0 8px 20px rgba(0,0,0,.05);border-top:4px solid #c9a84c"><div style="background:#c9a84c;color:#1a3a1a;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;margin-bottom:16px">2</div><strong>批次验证（8周）</strong><p>1,000羽，验体重抽测、料肉比计算、成活率统计</p></div>
+<div style="background:white;border-radius:20px;padding:24px;box-shadow:0 8px 20px rgba(0,0,0,.05);border-top:4px solid #c9a84c"><div style="background:#c9a84c;color:#1a3a1a;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;margin-bottom:16px">3</div><strong>全场导入</strong><p>全场土鸡统一添加，年出栏3批次，建立活禽市场品相优势</p></div>
+</div>
+<h2>投入多少，得到多少？</h2>
+<div style="display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin:32px 0">
+<div style="background:rgba(26,58,26,.05);border-radius:16px;padding:24px 32px;text-align:center;min-width:160px;border:1px solid #c9a84c"><div style="font-size:2rem;font-weight:800;color:#c9a84c;font-family:'Roboto Mono',monospace">1:3～1:4</div><div>保守估算</div></div>
+<div style="background:rgba(26,58,26,.05);border-radius:16px;padding:24px 32px;text-align:center;min-width:160px;border:1px solid #c9a84c"><div style="font-size:2rem;font-weight:800;color:#c9a84c;font-family:'Roboto Mono',monospace">1:6～1:8</div><div>田间试验参考值</div></div>
+</div>
+<p>① 出栏增重+5-8% → 每只体重增加，活禽溢价　② 料肉比-3-5% → 饲料成本直接节省　③ 成活率+2-3% → 每批损耗减少</p>
+<div style="text-align:center;margin:20px 0"><img src="assets/native-chicken-roi-analysis.jpg" loading="lazy" style="max-width:100%;border-radius:16px;cursor:pointer" alt="土鸡ROI分析" onerror="this.style.display='none'" onclick="openLightbox(this.src)"></div>
+<p style="font-size:.8rem;color:#888">※ 本页面数据来自活力旺®田间试验及已发表文献（MDPI 2014/PMC 2018），实际效果因品种、饲养密度、饲料配方而异。<br>※ 建议设立同批次同品种对照组验证效益。<br>※ 投入产出比为参考值，不构成任何投资建议。</p>
+<h2>准备好让您的土鸡发挥最大市场价值了吗？</h2>
+<div style="text-align:center;padding:24px 0">
+<a href="#" style="background:#1a3a1a;color:#c9a84c;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;margin:8px;display:inline-block">📞 技术咨询</a>
+<a href="#" style="background:#c9a84c;color:#1a3a1a;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;margin:8px;display:inline-block">📋 申请试验方案</a>
+</div>
+</div>
     </div>
-  </section>
+</div>
 
-  <section class="alt">
+<!-- ==================== 繁体中文版（完整翻译） ==================== -->
+<div class="lang-tw" style="display: none;">
+    <div class="container species-tab-container">
+        <div class="species-tab active" data-species="broiler">白羽肉雞</div>
+        <div class="species-tab" data-species="native">土雞</div>
+    </div>
+    <div id="tw-broiler" class="species-content">
+        <img src="assets/broiler-chicken-fcr-improvement.jpg" alt="白羽肉雞養殖" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="width:100%; height:auto; max-height:480px; object-fit:cover; border-radius:0; margin:0 auto">
+        <div class="container"><div style="text-align: center; margin: 40px 0 20px;"><h1>白羽肉雞綜合方案｜胸肉+12.15% 屠體率+5.88%</h1></div>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;"><div class="kpi-card"><div><span class="after">+12.15%</span></div><div>胸肉比例</div></div><div class="kpi-card"><div><span class="after">+5.88%</span></div><div>屠體率</div></div><div class="kpi-card"><div><span class="after">-8-12%</span></div><div>FCR料肉比</div></div></div></div>
+        <div class="container"><h2>您是否也有這些困擾？</h2><div style="display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px,1fr));"><div class="pain-point"><i class="fas fa-chart-line" style="color: var(--danger); font-size: 1.8rem; margin-bottom: 12px; display: block;"></i><h3>胸肉比例低</h3><p>65%以下，深加工廠只給普通價，達不到出口標準。</p></div><div class="pain-point"><i class="fas fa-weight-hanging" style="color: var(--danger); font-size: 1.8rem; margin-bottom: 12px; display: block;"></i><h3>FCR居高不下</h3><p>1.8以上，豆粕一漲價利潤就消失，標準化批次波動大。</p></div><div class="pain-point"><i class="fas fa-tint" style="color: var(--danger); font-size: 1.8rem; margin-bottom: 12px; display: block;"></i><h3>肉質蒼白、滴水損失高</h3><p>PSE肉，被加工廠打折收購，損失直接算在你頭上。</p></div></div></div>
+        <div class="container"><h2>使用活力旺®的實際成果</h2><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 20px;"><div class="kpi-card"><div>65% → <span class="after">73.24%</span></div><div>胸肉比例 +12.15%</div></div><div class="kpi-card"><div>82% → <span class="after">86.82%</span></div><div>屠體率 +5.88%</div></div><div class="kpi-card"><div>1.8:1 → <span class="after">1.65:1</span></div><div>FCR -8-12%</div></div><div class="kpi-card"><div><span class="after">顯著降低</span></div><div>滴水損失</div></div><div class="kpi-card"><div><span class="after">+15-20%</span></div><div>出欄體重(42天)</div></div><div class="kpi-card"><div><span class="after">+21.5%</span></div><div>肌肉抗氧化(MDPI 2014)</div></div></div><div style="background: #eef5ee; padding: 16px; border-radius: 16px; margin: 20px 0; font-weight: bold;">📌 使用方式：活力旺®預混型產品，20公斤/袋，按20公斤兌1噸全價飼料均勻混合，直接使用。</div>
+        <img src="assets/white-broiler-full-period-fattening-steps.png" alt="育肥流程" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto">
+        <img src="assets/white-broiler-growth-curve-comparison.png" alt="生長曲線對比" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto"></div>
+        <div class="container"><h2>為什麼活力得®枯草菌源蛋白酶有效？</h2><div class="mechanism-card"><div style="background: var(--accent); width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; margin-bottom:16px;">①</div><h3>腸道消化酶激活</h3><p>高效分解大分子蛋白質為小肽和胺基酸，提升腸道吸收利用率（PMC 2018）。</p><p class="mechanism-plain">→ 同樣的料，雞吸收更多蛋白質。肉長到胸部，不是浪費在糞便裡。</p></div><div class="mechanism-card"><div style="background: var(--accent); width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; margin-bottom:16px;">②</div><h3>肌肉生長定向調控</h3><p>精準調控肌纖維增生通路，同時抑制脂肪合成酶（ACC）活性，實現「增肌減脂」（MDPI 2014）。</p><p class="mechanism-plain">→ 細胞能量更足，肌肉生長更快，出欄日齡不變但胸肉更多。</p></div><div class="mechanism-card"><div style="background: var(--accent); width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; margin-bottom:16px;">③</div><h3>肉質抗氧化保護</h3><p>清除活性氧，降低肌肉細胞氧化損傷，減少PSE肉發生，肌肉抗氧化能力+21.5%（MDPI 2014）。</p><p class="mechanism-plain">→ 肉不蒼白、不流水。送到深加工廠，少損耗多收益。</p></div>
+        <img src="assets/white-broiler-growth-fcr-comparison.png" alt="生長FCR對比" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto">
+        <img src="assets/white-broiler-fcr-optimization-data.png" alt="FCR優化數據" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto">
+        <img src="assets/white-broiler-carcass-quality-comparison.png" alt="屠體品質對比" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto"></div>
+        <div class="container"><h2>您養的品種，效果一樣嗎？</h2><div class="table-wrapper"><table><thead><tr><th>品種</th><th>主要省份</th><th>出欄日齡</th><th>胸肉改善</th><th>屠體率改善</th><th>活力旺優勢</th></tr></thead><tbody><tr><td>艾拔益加（AA+）</td><td>全國廣泛</td><td>42-45天</td><td>+12.15%</td><td>+5.88%</td><td>肉質+抗氧化</td></tr><tr><td>科寶（Cobb）500</td><td>廣東、福建、山東</td><td>42天</td><td>+12.15%</td><td>+5.88%</td><td>FCR顯著改善</td></tr><tr><td>羅斯（Ross）308</td><td>華北、山東、河南</td><td>42-45天</td><td>+12.15%</td><td>+5.88%</td><td>滴水損失↓</td></tr><tr><td>哈巴德（Hubbard）</td><td>南方省份</td><td>42-48天</td><td>顯著</td><td>顯著</td><td>全程效益穩定</td></tr></tbody></table></div>
+        <img src="assets/broiler_carcass_quality_comparison.jpg" alt="屠體品質對比" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto"></div>
+        <div class="container"><h2>小規模試驗，大規模獲利</h2><div style="display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(260px,1fr));"><div class="phase-card"><div class="phase-badge">1</div><h3>小群驗證（1週）</h3><p>500羽AA雞，投入成本極低，驗證採食量、糞便形態、生長速度。</p></div><div class="phase-card"><div class="phase-badge">2</div><h3>批次驗證（2週）</h3><p>2,000羽Ross雞，驗證體重抽測、FCR計算、屠體品質。</p></div><div class="phase-card"><div class="phase-badge">3</div><h3>全場導入</h3><p>全場白羽肉雞統一添加，建立深加工廠溢價供應鏈。</p></div></div>
+        <img src="assets/feed-efficiency-triptych.jpg" alt="飼料效率三聯圖" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto">
+        <img src="assets/white-broiler-roi-calculation.png" alt="ROI計算圖" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto"></div>
+        <div class="container"><h2>投入多少，得到多少？</h2><div class="roi-card-row"><div class="roi-card-item"><div class="roi-number">1:6～1:10</div><div>白羽肉雞（田間試驗參考值）</div></div></div><div style="background: var(--light); padding: 16px; border-radius: 16px; margin: 20px 0;"><p><strong>3個效益來源：</strong></p><ul><li>① 胸肉+12.15% → 深加工廠收購溢價</li><li>② FCR改善8-12% → 飼料成本↓</li><li>③ 肉質抗氧化+21.5% → 出口競爭力↑</li></ul></div><div style="background: #eef5ee; padding: 12px; border-radius: 12px;"><i class="fas fa-info-circle"></i> 活力旺®白羽肉雞方案添加成本約20元/噸飼料以內，符合規模化雞場添加劑成本接受標準。</div>
+        <img src="assets/broiler-roi-chart.jpg" alt="ROI分析圖" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto">
+        <div style="font-size: 0.8rem; color: #666; margin-top: 20px;"><p>※ 本頁面數據來自活力旺®田間試驗及已發表文獻（MDPI 2014/PMC 2018），實際效果因品種、飼養密度、飼料配方而異。</p><p>※ 建議設立同批次同品種對照組驗證效益。</p><p>※ 投入產出比為參考值，不構成任何投資建議。</p></div></div>
+        <div style="background: var(--primary); color: white; text-align: center; padding: 60px 20px;"><h2 style="color: white; border-left: none;">準備好讓您的肉雞發揮最大商業價值了嗎？</h2><p>立即諮詢活力旺®代理商</p><div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;"><a href="#" class="btn-primary">📞 技術諮詢</a><a href="#" class="btn-primary">📋 申請試驗方案</a></div></div>
+    </div>
+    <div id="tw-native" class="species-content" style="display: none;">
     <div class="container">
-      <h2 class="section-title">使用活力旺®的实际成果</h2>
-      <p class="section-sub">数据来自PubMed 2016 · MDPI 2014 · 活力旺®田间对照试验</p>
-      <div class="result-grid">
-        <div class="result-img">
-          <img src="assets/broiler_carcass_quality_comparison.jpg" alt="白羽鸡效益对比" onerror="this.style.display='none'">
-        </div>
-        <div class="result-stats">
-          <div class="stat-row"><span class="stat-label">胸肉产量</span><span class="stat-value">+12.15%</span></div>
-          <div class="stat-row"><span class="stat-label">屠体率</span><span class="stat-value">+5.88%</span></div>
-          <div class="stat-row"><span class="stat-label">肌肉抗氧化</span><span class="stat-value">+21.5%</span></div>
-          <div class="stat-row"><span class="stat-label">肉品质评分</span><span class="stat-value">+12.1~20.7%</span></div>
-          <div class="stat-row"><span class="stat-label">FCR</span><span class="stat-value">显著改善</span></div>
-          <p style="font-size:0.78rem;color:var(--muted);margin-top:12px">※ 胸肉+12.15%·屠体+5.88%：PubMed 2016；肌肉抗氧化+21.5%：MDPI 2014</p>
-        </div>
-      </div>
-      <div class="usage-box">
-        <strong>📌 使用方式：</strong>活力旺®预混型产品，20公斤/袋，按<strong>1公斤兑1吨全价料</strong>均匀混合，开袋即用。全程饲喂（0-42天）。
-      </div>
+<h2>土雞養殖，您是否也有這些困擾？</h2>
+<div style="display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin:20px 0">
+<div style="background:#fff5f5;border-left:4px solid #c0392b;padding:18px;border-radius:12px"><strong>⏱ 生長週期長（16-22週），料肉比高（3.3-3.5），飼料成本居高不下</strong></div>
+<div style="background:#fff5f5;border-left:4px solid #c0392b;padding:18px;border-radius:12px"><strong>🪶 羽毛暗淡、體型不均，活禽市場品相差，只能按普通價賣</strong></div>
+<div style="background:#fff5f5;border-left:4px solid #c0392b;padding:18px;border-radius:12px"><strong>📉 成活率波動大（92-95%），損耗吃掉利潤，競爭壓力大</strong></div>
+</div>
+<h2>使用活力旺®的實際成果</h2>
+<div style="display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));margin:20px 0">
+<div style="background:white;border-radius:16px;padding:20px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.05);border:1px solid #e0e7e0"><div style="font-size:1.8rem;font-weight:800;color:#c9a84c;font-family:'Roboto Mono',monospace">+5-8%</div><div>出欄增重</div><div style="font-size:.8rem;color:#6b7c6b">16週 2.45kg→2.60-2.65kg</div></div>
+<div style="background:white;border-radius:16px;padding:20px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.05);border:1px solid #e0e7e0"><div style="font-size:1.8rem;font-weight:800;color:#c9a84c;font-family:'Roboto Mono',monospace">-3-5%</div><div>料肉比</div><div style="font-size:.8rem;color:#6b7c6b">3.45:1→3.30-3.35:1</div></div>
+<div style="background:white;border-radius:16px;padding:20px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.05);border:1px solid #e0e7e0"><div style="font-size:1.8rem;font-weight:800;color:#c9a84c;font-family:'Roboto Mono',monospace">+2-3%</div><div>成活率</div><div style="font-size:.8rem;color:#6b7c6b">95%→97-98%</div></div>
+<div style="background:white;border-radius:16px;padding:20px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.05);border:1px solid #e0e7e0"><div style="font-size:1.8rem;font-weight:800;color:#c9a84c;font-family:'Roboto Mono',monospace">+15%</div><div>屠體評分</div><div style="font-size:.8rem;color:#6b7c6b">羽毛光澤顯著改善</div></div>
+</div>
+<div style="text-align:center;margin:24px 0"><img src="assets/native-chicken.png" loading="lazy" style="max-width:100%;border-radius:16px;cursor:pointer" alt="土雞綜合方案" onerror="this.style.display='none'" onclick="openLightbox(this.src)"></div>
+<p style="font-weight:bold;background:#f0f7f0;padding:12px 16px;border-radius:8px;border-left:4px solid #1a3a1a;margin:20px 0">📌 活力旺®預混型產品，20公斤/袋，按20公斤兌1噸全價飼料均勻混合，直接使用。</p>
+<div style="text-align:center;margin:20px 0"><img src="assets/native-chicken-product-ratio.jpg" loading="lazy" style="max-width:100%;border-radius:16px;cursor:pointer" alt="土雞產品添加比例" onerror="this.style.display='none'" onclick="openLightbox(this.src)"></div>
+<div style="text-align:center;margin:20px 0"><img src="assets/native-chicken-performance-improvement.jpg" loading="lazy" style="max-width:100%;border-radius:16px;cursor:pointer" alt="土雞性能提升對比" onerror="this.style.display='none'" onclick="openLightbox(this.src)"></div>
+<h2>為什麼活力得®枯草菌源蛋白酶對土雞同樣有效？</h2>
+<div style="margin:20px 0">
+<div style="background:#f8f9f4;border-radius:20px;padding:24px;border:1px solid #e0e7e0;margin-bottom:20px"><strong>① 精密複合酶</strong>：提升蛋白質、氨基酸吸收效率，降低飼料抗營養因子影響<br><span style="color:#1a7a1a">→ 同樣的粗飼料，土雞吸收更多。料肉比直接下降3-5%。</span></div>
+<div style="background:#f8f9f4;border-radius:20px;padding:24px;border:1px solid #e0e7e0;margin-bottom:20px"><strong>② 免疫調控肽</strong>：激活Nrf2/ARE抗氧化通路，提升SOD活性30%，降低腹水症、呼吸道疾病發生率<br><span style="color:#1a7a1a">→ 成活率從95%提升到97-98%。少死幾隻，多一批利潤。</span></div>
+<div style="background:#f8f9f4;border-radius:20px;padding:24px;border:1px solid #e0e7e0;margin-bottom:20px"><strong>③ 色素代謝調控</strong>：促進天然色素在皮膚和羽毛的沉積，改善羽毛緊實度和光澤，提升屠體評分<br><span style="color:#1a7a1a">→ 羽毛更光亮，體型更均勻。活禽市場品相好，溢價自然來。</span></div>
+</div>
+<div style="text-align:center;margin:20px 0"><img src="assets/native-chicken-tech-mechanism.jpg" loading="lazy" style="max-width:100%;border-radius:16px;cursor:pointer" alt="土雞核心技術機制" onerror="this.style.display='none'" onclick="openLightbox(this.src)"></div>
+<h2>您養的土雞品種，效果一樣嗎？</h2>
+<div style="overflow-x:auto;margin:20px 0"><table><thead><tr><th>品種</th><th>主要省份</th><th>出欄週齡</th><th>增重改善</th><th>料肉比改善</th><th>成活率改善</th></tr></thead><tbody>
+<tr><td>紅羽土雞</td><td>廣東、廣西、福建</td><td>16-20週</td><td>+5-8%</td><td>-3-5%</td><td>+2-3%</td></tr>
+<tr><td>黑羽土雞</td><td>浙江、湖南、廣西</td><td>16-22週</td><td>+5-8%</td><td>-3-5%</td><td>+2-3%</td></tr>
+<tr><td>三黃雞</td><td>廣東、廣西</td><td>14-18週</td><td>顯著改善</td><td>顯著改善</td><td>顯著改善</td></tr>
+<tr><td>烏雞（烏骨雞）</td><td>江西、浙江、湖北</td><td>20-24週</td><td>改善顯著</td><td>改善顯著</td><td>改善顯著</td></tr>
+</tbody></table></div>
+<div style="text-align:center;margin:20px 0"><img src="assets/native-chicken-traditional-vs-innovative.jpg" loading="lazy" style="max-width:100%;border-radius:16px;cursor:pointer" alt="傳統vs活力旺方案" onerror="this.style.display='none'" onclick="openLightbox(this.src)"></div>
+<h2>小規模試驗，大規模獲利</h2>
+<div style="display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin:20px 0">
+<div style="background:white;border-radius:20px;padding:24px;box-shadow:0 8px 20px rgba(0,0,0,.05);border-top:4px solid #c9a84c"><div style="background:#c9a84c;color:#1a3a1a;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;margin-bottom:16px">1</div><strong>小群驗證（2週）</strong><p>200羽土雞，驗採食量、糞便形態、精神狀態</p></div>
+<div style="background:white;border-radius:20px;padding:24px;box-shadow:0 8px 20px rgba(0,0,0,.05);border-top:4px solid #c9a84c"><div style="background:#c9a84c;color:#1a3a1a;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;margin-bottom:16px">2</div><strong>批次驗證（8週）</strong><p>1,000羽，驗體重抽測、料肉比計算、成活率統計</p></div>
+<div style="background:white;border-radius:20px;padding:24px;box-shadow:0 8px 20px rgba(0,0,0,.05);border-top:4px solid #c9a84c"><div style="background:#c9a84c;color:#1a3a1a;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;margin-bottom:16px">3</div><strong>全場導入</strong><p>全場土雞統一添加，年出欄3批次，建立活禽市場品相優勢</p></div>
+</div>
+<h2>投入多少，得到多少？</h2>
+<div style="display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin:32px 0">
+<div style="background:rgba(26,58,26,.05);border-radius:16px;padding:24px 32px;text-align:center;min-width:160px;border:1px solid #c9a84c"><div style="font-size:2rem;font-weight:800;color:#c9a84c;font-family:'Roboto Mono',monospace">1:3～1:4</div><div>保守估算</div></div>
+<div style="background:rgba(26,58,26,.05);border-radius:16px;padding:24px 32px;text-align:center;min-width:160px;border:1px solid #c9a84c"><div style="font-size:2rem;font-weight:800;color:#c9a84c;font-family:'Roboto Mono',monospace">1:6～1:8</div><div>田間試驗參考值</div></div>
+</div>
+<p>① 出欄增重+5-8% → 每隻體重增加，活禽溢價　② 料肉比-3-5% → 飼料成本直接節省　③ 成活率+2-3% → 每批損耗減少</p>
+<div style="text-align:center;margin:20px 0"><img src="assets/native-chicken-roi-analysis.jpg" loading="lazy" style="max-width:100%;border-radius:16px;cursor:pointer" alt="土雞ROI分析" onerror="this.style.display='none'" onclick="openLightbox(this.src)"></div>
+<p style="font-size:.8rem;color:#888">※ 本頁面數據來自活力旺®田間試驗及已發表文獻（MDPI 2014/PMC 2018），實際效果因品種、飼養密度、飼料配方而異。<br>※ 建議設立同批次同品種對照組驗證效益。<br>※ 投入產出比為參考值，不構成任何投資建議。</p>
+<h2>準備好讓您的土雞發揮最大市場價值了嗎？</h2>
+<div style="text-align:center;padding:24px 0">
+<a href="#" style="background:#1a3a1a;color:#c9a84c;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;margin:8px;display:inline-block">📞 技術諮詢</a>
+<a href="#" style="background:#c9a84c;color:#1a3a1a;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;margin:8px;display:inline-block">📋 申請試驗方案</a>
+</div>
+</div>
     </div>
-  </section>
+</div>
 
-  <section>
+<!-- ==================== 英文版（完整翻译） ==================== -->
+<div class="lang-en" style="display: none;">
+    <div class="container species-tab-container">
+        <div class="species-tab active" data-species="broiler">White Broiler</div>
+        <div class="species-tab" data-species="native">Native Chicken</div>
+    </div>
+    <div id="en-broiler" class="species-content">
+        <img src="assets/broiler-chicken-fcr-improvement.jpg" alt="White Broiler Farming" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="width:100%; height:auto; max-height:480px; object-fit:cover; border-radius:0; margin:0 auto">
+        <div class="container"><div style="text-align: center; margin: 40px 0 20px;"><h1>White Broiler Solution｜Breast +12.15%  Carcass +5.88%</h1></div>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;"><div class="kpi-card"><div><span class="after">+12.15%</span></div><div>Breast Yield</div></div><div class="kpi-card"><div><span class="after">+5.88%</span></div><div>Carcass Rate</div></div><div class="kpi-card"><div><span class="after">-8-12%</span></div><div>FCR</div></div></div></div>
+        <div class="container"><h2>Do You Also Face These Challenges?</h2><div style="display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px,1fr));"><div class="pain-point"><i class="fas fa-chart-line" style="color: var(--danger); font-size: 1.8rem; margin-bottom: 12px; display: block;"></i><h3>Low Breast Yield</h3><p>Below 65%. Deep-processing plants only offer standard prices. Can't meet export specs.</p></div><div class="pain-point"><i class="fas fa-weight-hanging" style="color: var(--danger); font-size: 1.8rem; margin-bottom: 12px; display: block;"></i><h3>High FCR</h3><p>Above 1.8. Soybean price hikes wipe out margins. Batch-to-batch variation high.</p></div><div class="pain-point"><i class="fas fa-tint" style="color: var(--danger); font-size: 1.8rem; margin-bottom: 12px; display: block;"></i><h3>Pale PSE Meat, High Drip Loss</h3><p>Processing plants discount your price. Loss directly impacts you.</p></div></div></div>
+        <div class="container"><h2>Real Results with VitalBoost®</h2><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 20px;"><div class="kpi-card"><div>65% → <span class="after">73.24%</span></div><div>Breast +12.15%</div></div><div class="kpi-card"><div>82% → <span class="after">86.82%</span></div><div>Carcass +5.88%</div></div><div class="kpi-card"><div>1.8:1 → <span class="after">1.65:1</span></div><div>FCR -8-12%</div></div><div class="kpi-card"><div><span class="after">Significant ↓</span></div><div>Drip Loss</div></div><div class="kpi-card"><div><span class="after">+15-20%</span></div><div>Market weight (42d)</div></div><div class="kpi-card"><div><span class="after">+21.5%</span></div><div>Muscle antioxidant (MDPI 2014)</div></div></div><div style="background: #eef5ee; padding: 16px; border-radius: 16px; margin: 20px 0; font-weight: bold;">📌 Usage: VitalBoost® pre-mixed product, 20kg/bag. Add 20kg per 1 metric ton of complete feed. Ready to use.</div>
+        <img src="assets/white-broiler-full-period-fattening-steps.png" alt="Fattening steps" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto">
+        <img src="assets/white-broiler-growth-curve-comparison.png" alt="Growth curve" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto"></div>
+        <div class="container"><h2>Why VitalBoost® Works?</h2><div class="mechanism-card"><div style="background: var(--accent); width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; margin-bottom:16px;">①</div><h3>Gut Enzyme Activation</h3><p>Efficiently breaks down proteins into small peptides/amino acids, increasing absorption (PMC 2018).</p><p class="mechanism-plain">→ Same feed, more protein absorbed. Meat builds to breast, not wasted in feces.</p></div><div class="mechanism-card"><div style="background: var(--accent); width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; margin-bottom:16px;">②</div><h3>Muscle Growth Direction</h3><p>Precise regulation of muscle fiber proliferation while inhibiting ACC – “gain muscle, lose fat” (MDPI 2014).</p><p class="mechanism-plain">→ More cellular energy, faster growth. Same days on feed, more breast meat.</p></div><div class="mechanism-card"><div style="background: var(--accent); width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; margin-bottom:16px;">③</div><h3>Antioxidant Protection</h3><p>Scavenges ROS, reduces oxidative damage, cuts PSE meat, muscle antioxidant +21.5% (MDPI 2014).</p><p class="mechanism-plain">→ No pale meat, no drip loss. Better deep-processing returns.</p></div>
+        <img src="assets/white-broiler-growth-fcr-comparison.png" alt="Growth FCR" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto">
+        <img src="assets/white-broiler-fcr-optimization-data.png" alt="FCR optimization" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto">
+        <img src="assets/white-broiler-carcass-quality-comparison.png" alt="Carcass quality" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto"></div>
+        <div class="container"><h2>Does It Work for Your Breed?</h2><div class="table-wrapper"><table><thead><tr><th>Breed</th><th>Main Region</th><th>Slaughter Age</th><th>Breast Gain</th><th>Carcass Gain</th><th>VitalBoost® Edge</th></tr></thead><tbody><tr><td>AA+ Broiler</td><td>National</td><td>42-45d</td><td>+12.15%</td><td>+5.88%</td><td>Meat quality + antioxidant</td></tr><tr><td>Cobb 500</td><td>Guangdong/Fujian/Shandong</td><td>42d</td><td>+12.15%</td><td>+5.88%</td><td>FCR significantly improved</td></tr><tr><td>Ross 308</td><td>N.China/Shandong/Henan</td><td>42-45d</td><td>+12.15%</td><td>+5.88%</td><td>Drip loss↓</td></tr><tr><td>Hubbard</td><td>Southern provinces</td><td>42-48d</td><td>Significant</td><td>Significant</td><td>Consistent full-cycle benefit</td></tr></tbody></table></div>
+        <img src="assets/broiler_carcass_quality_comparison.jpg" alt="Carcass quality" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto"></div>
+        <div class="container"><h2>Small-Scale Trial, Large-Scale Profit</h2><div style="display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(260px,1fr));"><div class="phase-card"><div class="phase-badge">1</div><h3>Small group (1 week)</h3><p>500 AA broilers, minimal cost. Track feed intake, feces, growth rate.</p></div><div class="phase-card"><div class="phase-badge">2</div><h3>Batch trial (2 weeks)</h3><p>2,000 Ross broilers. Track weight, FCR, carcass quality.</p></div><div class="phase-card"><div class="phase-badge">3</div><h3>Full rollout</h3><p>Unified addition across all white broilers. Build premium supply chain.</p></div></div>
+        <img src="assets/feed-efficiency-triptych.jpg" alt="Feed efficiency" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto">
+        <img src="assets/white-broiler-roi-calculation.png" alt="ROI calculation" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto"></div>
+        <div class="container"><h2>Investment vs. Return</h2><div class="roi-card-row"><div class="roi-card-item"><div class="roi-number">1:6～1:10</div><div>White broiler (field trial ref.)</div></div></div><div style="background: var(--light); padding: 16px; border-radius: 16px; margin: 20px 0;"><p><strong>3 benefit sources:</strong></p><ul><li>① Breast +12.15% → Premium from deep-processing</li><li>② FCR -8-12% → Feed cost ↓</li><li>③ Meat antioxidant +21.5% → Export edge</li></ul></div><div style="background: #eef5ee; padding: 12px; border-radius: 12px;"><i class="fas fa-info-circle"></i> VitalBoost® broiler program additive cost approx. 20 CNY/ton of feed, within standard additive budget.</div>
+        <img src="assets/broiler-roi-chart.jpg" alt="ROI chart" loading="lazy" onerror="this.style.display='none'" onclick="openLightbox(this.src)" style="max-width:100%;height:auto;border-radius:16px;cursor:pointer;display:block;margin:16px auto">
+        <div style="font-size: 0.8rem; color: #666; margin-top: 20px;"><p>※ Data from VitalBoost® field trials and published literature (MDPI 2014/PMC 2018). Results vary by breed and management.</p><p>※ Recommend setting up same-batch, same-breed control group for validation.</p><p>※ ROI ratios are reference values only, not investment advice.</p></div></div>
+        <div style="background: var(--primary); color: white; text-align: center; padding: 60px 20px;"><h2 style="color: white; border-left: none;">Ready to maximize your broiler's commercial value?</h2><p>Contact VitalBoost® Distributor</p><div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;"><a href="#" class="btn-primary">📞 Technical Consultation</a><a href="#" class="btn-primary">📋 Request Trial Protocol</a></div></div>
+    </div>
+    <div id="en-native" class="species-content" style="display: none;">
     <div class="container">
-      <h2 class="section-title">为什么活力得®枯草菌源蛋白酶有效？</h2>
-      <p class="section-sub">三层分子机制，白羽鸡专项优化</p>
-      <div class="mech-grid">
-        <div class="mech-card">
-          <div class="mech-num">①</div>
-          <h3>腸道消化效率提升</h3>
-          <p>活力得®枯草菌源蛋白酶促进蛋白质水解为小肽与氨基酸，提升饲料利用率，肠道绒毛高度显著增加，吸收面积扩大，FCR直接改善（PubMed 2016）。</p>
-          <div class="mech-plain">→ 同样的料，鸡吸收更多蛋白质。肉长到胸部，不是浪费在粪便里。</div>
-        </div>
-        <div class="mech-card">
-          <div class="mech-num">②</div>
-          <h3>線粒體能量强化</h3>
-          <p>活力得®枯草菌源蛋白酶嵌入肝脏线粒体膜，激活细胞色素c氧化酶，ATP合成效率+25-30%，促进肌肉蛋白合成，胸肉产量+12.15%（PubMed 2016）。</p>
-          <div class="mech-plain">→ 细胞能量更足，肌肉生长更快，出栏日龄不变但胸肉更多。</div>
-        </div>
-        <div class="mech-card">
-          <div class="mech-num">③</div>
-          <h3>肌肉抗氧化保护</h3>
-          <p>活力得®枯草菌源蛋白酶激活Nrf2/ARE通路，降低肌肉脂质过氧化，肌肉抗氧化能力+21.5%，滴水损失显著降低，肉色更均匀（MDPI 2014）。</p>
-          <div class="mech-plain">→ 肉不苍白、不流水。送到深加工厂，少损耗多收益。</div>
-        </div>
-      </div>
-      <div style="margin-top:24px;display:flex;gap:16px;flex-wrap:wrap;justify-content:center">
-        <img src="assets/feed-efficiency-triptych.jpg" alt="白羽鸡效益三联图" onerror="this.style.display='none'" style="max-width:100%;width:100%;border-radius:10px;display:block;margin:8px auto">
-      </div>
+<h2>Native Chicken Farming Challenges?</h2>
+<div style="display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin:20px 0">
+<div style="background:#fff5f5;border-left:4px solid #c0392b;padding:18px;border-radius:12px"><strong>⏱ Long grow-out (16-22 weeks). High FCR (3.3-3.5). Feed costs never come down.</strong></div>
+<div style="background:#fff5f5;border-left:4px solid #c0392b;padding:18px;border-radius:12px"><strong>🪶 Dull feathers, uneven body size. Poor appearance at live bird market. Only ordinary prices.</strong></div>
+<div style="background:#fff5f5;border-left:4px solid #c0392b;padding:18px;border-radius:12px"><strong>📉 Survival rate varies 92-95%. Losses eat profits. Intense rural competition.</strong></div>
+</div>
+<h2>Real Results with VitalBoost®</h2>
+<div style="display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));margin:20px 0">
+<div style="background:white;border-radius:16px;padding:20px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.05);border:1px solid #e0e7e0"><div style="font-size:1.8rem;font-weight:800;color:#c9a84c;font-family:'Roboto Mono',monospace">+5-8%</div><div>Weight Gain</div><div style="font-size:.8rem;color:#6b7c6b">16wk 2.45kg→2.60-2.65kg</div></div>
+<div style="background:white;border-radius:16px;padding:20px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.05);border:1px solid #e0e7e0"><div style="font-size:1.8rem;font-weight:800;color:#c9a84c;font-family:'Roboto Mono',monospace">-3-5%</div><div>FCR</div><div style="font-size:.8rem;color:#6b7c6b">3.45:1→3.30-3.35:1</div></div>
+<div style="background:white;border-radius:16px;padding:20px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.05);border:1px solid #e0e7e0"><div style="font-size:1.8rem;font-weight:800;color:#c9a84c;font-family:'Roboto Mono',monospace">+2-3%</div><div>Survival Rate</div><div style="font-size:.8rem;color:#6b7c6b">95%→97-98%</div></div>
+<div style="background:white;border-radius:16px;padding:20px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.05);border:1px solid #e0e7e0"><div style="font-size:1.8rem;font-weight:800;color:#c9a84c;font-family:'Roboto Mono',monospace">+15%</div><div>Carcass Score</div><div style="font-size:.8rem;color:#6b7c6b">Feather quality significantly improved</div></div>
+</div>
+<div style="text-align:center;margin:24px 0"><img src="assets/native-chicken.png" loading="lazy" style="max-width:100%;border-radius:16px;cursor:pointer" alt="Native Chicken Solution" onerror="this.style.display='none'" onclick="openLightbox(this.src)"></div>
+<p style="font-weight:bold;background:#f0f7f0;padding:12px 16px;border-radius:8px;border-left:4px solid #1a3a1a;margin:20px 0">📌 VitalBoost® pre-mixed product, 20kg/bag. Add 20kg per 1 metric ton of complete feed. Ready to use.</p>
+<div style="text-align:center;margin:20px 0"><img src="assets/native-chicken-product-ratio.jpg" loading="lazy" style="max-width:100%;border-radius:16px;cursor:pointer" alt="Product add ratio" onerror="this.style.display='none'" onclick="openLightbox(this.src)"></div>
+<div style="text-align:center;margin:20px 0"><img src="assets/native-chicken-performance-improvement.jpg" loading="lazy" style="max-width:100%;border-radius:16px;cursor:pointer" alt="Performance improvement" onerror="this.style.display='none'" onclick="openLightbox(this.src)"></div>
+<h2>Why VitalBoost® Works for Native Chickens Too?</h2>
+<div style="margin:20px 0">
+<div style="background:#f8f9f4;border-radius:20px;padding:24px;border:1px solid #e0e7e0;margin-bottom:20px"><strong>① Precision Enzyme Complex</strong>: Improves protein and amino acid absorption, reduces anti-nutritional factors<br><span style="color:#1a7a1a">→ Same coarse feed, more absorbed. FCR drops 3-5% directly.</span></div>
+<div style="background:#f8f9f4;border-radius:20px;padding:24px;border:1px solid #e0e7e0;margin-bottom:20px"><strong>② Immune Modulation Peptide</strong>: Activates Nrf2/ARE pathway, raises SOD activity 30%, reduces ascites and respiratory disease<br><span style="color:#1a7a1a">→ Survival up from 95% to 97-98%. Fewer losses, more profit per cycle.</span></div>
+<div style="background:#f8f9f4;border-radius:20px;padding:24px;border:1px solid #e0e7e0;margin-bottom:20px"><strong>③ Pigment Metabolism Control</strong>: Promotes natural pigment deposition in skin and feathers, improves feather quality and luster<br><span style="color:#1a7a1a">→ Brighter feathers, more uniform size. Better appearance = better live market price.</span></div>
+</div>
+<div style="text-align:center;margin:20px 0"><img src="assets/native-chicken-tech-mechanism.jpg" loading="lazy" style="max-width:100%;border-radius:16px;cursor:pointer" alt="Tech mechanism" onerror="this.style.display='none'" onclick="openLightbox(this.src)"></div>
+<h2>Works for Your Native Chicken Breed?</h2>
+<div style="overflow-x:auto;margin:20px 0"><table><thead><tr><th>Breed</th><th>Main Region</th><th>Weeks to Market</th><th>Weight Gain</th><th>FCR</th><th>Survival</th></tr></thead><tbody>
+<tr><td>Red-feathered</td><td>Guangdong/Guangxi/Fujian</td><td>16-20 wks</td><td>+5-8%</td><td>-3-5%</td><td>+2-3%</td></tr>
+<tr><td>Black-feathered</td><td>Zhejiang/Hunan/Guangxi</td><td>16-22 wks</td><td>+5-8%</td><td>-3-5%</td><td>+2-3%</td></tr>
+<tr><td>Sanhuang</td><td>Guangdong/Guangxi</td><td>14-18 wks</td><td>Significant</td><td>Significant</td><td>Significant</td></tr>
+<tr><td>Silkie (Black-boned)</td><td>Jiangxi/Zhejiang/Hubei</td><td>20-24 wks</td><td>Notable</td><td>Notable</td><td>Notable</td></tr>
+</tbody></table></div>
+<div style="text-align:center;margin:20px 0"><img src="assets/native-chicken-traditional-vs-innovative.jpg" loading="lazy" style="max-width:100%;border-radius:16px;cursor:pointer" alt="Traditional vs VitalBoost" onerror="this.style.display='none'" onclick="openLightbox(this.src)"></div>
+<h2>Small-Scale Trial, Large-Scale Profit</h2>
+<div style="display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin:20px 0">
+<div style="background:white;border-radius:20px;padding:24px;box-shadow:0 8px 20px rgba(0,0,0,.05);border-top:4px solid #c9a84c"><div style="background:#c9a84c;color:#1a3a1a;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;margin-bottom:16px">1</div><strong>Small group (2 weeks)</strong><p>200 native chickens. Track feed intake, feces, behavior.</p></div>
+<div style="background:white;border-radius:20px;padding:24px;box-shadow:0 8px 20px rgba(0,0,0,.05);border-top:4px solid #c9a84c"><div style="background:#c9a84c;color:#1a3a1a;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;margin-bottom:16px">2</div><strong>Batch trial (8 weeks)</strong><p>1,000 birds. Track weight, FCR, survival rate.</p></div>
+<div style="background:white;border-radius:20px;padding:24px;box-shadow:0 8px 20px rgba(0,0,0,.05);border-top:4px solid #c9a84c"><div style="background:#c9a84c;color:#1a3a1a;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;margin-bottom:16px">3</div><strong>Full farm rollout</strong><p>Unified addition. 3 cycles/year. Build live-market premium advantage.</p></div>
+</div>
+<h2>Investment vs. Return</h2>
+<div style="display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin:32px 0">
+<div style="background:rgba(26,58,26,.05);border-radius:16px;padding:24px 32px;text-align:center;min-width:160px;border:1px solid #c9a84c"><div style="font-size:2rem;font-weight:800;color:#c9a84c;font-family:'Roboto Mono',monospace">1:3~1:4</div><div>Conservative</div></div>
+<div style="background:rgba(26,58,26,.05);border-radius:16px;padding:24px 32px;text-align:center;min-width:160px;border:1px solid #c9a84c"><div style="font-size:2rem;font-weight:800;color:#c9a84c;font-family:'Roboto Mono',monospace">1:6~1:8</div><div>Field Trial Reference</div></div>
+</div>
+<p>① Weight +5-8% → Heavier bird, better live price　② FCR -3-5% → Direct feed savings　③ Survival +2-3% → Fewer losses per cycle</p>
+<div style="text-align:center;margin:20px 0"><img src="assets/native-chicken-roi-analysis.jpg" loading="lazy" style="max-width:100%;border-radius:16px;cursor:pointer" alt="Native chicken ROI analysis" onerror="this.style.display='none'" onclick="openLightbox(this.src)"></div>
+<p style="font-size:.8rem;color:#888">※ Data from VitalBoost® field trials and published literature (MDPI 2014/PMC 2018). Results vary by breed and management.<br>※ Recommend same-batch, same-breed control group for validation.<br>※ ROI ratios are reference values only, not investment advice.</p>
+<h2>Ready to maximize your native chicken's market value?</h2>
+<div style="text-align:center;padding:24px 0">
+<a href="#" style="background:#1a3a1a;color:#c9a84c;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;margin:8px;display:inline-block">📞 Technical Consultation</a>
+<a href="#" style="background:#c9a84c;color:#1a3a1a;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;margin:8px;display:inline-block">📋 Apply for Trial Program</a>
+</div>
+</div>
     </div>
-  </section>
-
-  <section class="alt">
-    <div class="container">
-      <h2 class="section-title">您养的品种，效果一样吗？</h2>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>品种</th><th>主要省份</th><th>出栏日龄</th><th>胸肉改善</th><th>屠体率改善</th><th>活力旺优势</th></tr></thead>
-          <tbody>
-            <tr><td>艾拔益加（AA+）</td><td>全国广泛</td><td>42-45天</td><td>+12.15%</td><td>+5.88%</td><td>肉质+抗氧化</td></tr>
-            <tr><td>科宝（Cobb）500</td><td>广东、福建、山东</td><td>42天</td><td>+12.15%</td><td>+5.88%</td><td>FCR显著改善</td></tr>
-            <tr><td>罗斯（Ross）308</td><td>华北、山东、河南</td><td>42-45天</td><td>+12.15%</td><td>+5.88%</td><td>滴水损失↓</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p style="font-size:0.78rem;color:var(--muted);margin-top:10px">※ 数据来自PubMed 2016·MDPI 2014，实际效果因品种、管理条件而异，建议设立对照组验证。</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <h2 class="section-title">小规模试验，大规模获利</h2>
-      <div class="phase-grid">
-        <div class="phase-card">
-          <div class="phase-num">1</div>
-          <h3>第一阶段：快速验证</h3>
-          <p>1栏白羽鸡（2,000-5,000羽），从进雏当天开始添加，对照1栏不添加，出栏时比较：屠体率、胸肉率、滴水损失三项指标。</p>
-        </div>
-        <div class="phase-card">
-          <div class="phase-num">2</div>
-          <h3>第二阶段：效益验证</h3>
-          <p>扩大至3-5栏，完整记录FCR、出栏体重、胸肉产量、深加工收购价差异，计算每羽纯利润对比。</p>
-        </div>
-        <div class="phase-card">
-          <div class="phase-num">3</div>
-          <h3>第三阶段：全场导入</h3>
-          <p>全场白羽鸡导入，建立「高胸肉率·低FCR·优肉质」竞争优势，符合出口BAP/GlobalG.A.P.认证要求。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="alt">
-    <div class="container" style="text-align:center">
-      <h2 class="section-title">投入多少，得到多少？</h2>
-      <div class="roi-box">
-        <p style="font-size:1.1rem;margin-bottom:8px">投入 1 份成本</p>
-        <div style="font-size:2.5rem;margin:8px 0">→</div>
-        <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:24px;font-size:0.9rem;opacity:0.85">
-          <div>① 胸肉+12.15% → 收购溢价</div>
-          <div>② FCR改善 → 饲料成本↓</div>
-          <div>③ 肉质+21.5% → 出口竞争力↑</div>
-        </div>
-        <div class="roi-cards">
-          <div class="roi-card outer"><div class="roi-num">1:6</div><div class="roi-label">保守估算</div></div>
-          <div class="roi-card center"><div class="roi-num" style="font-size:1.3rem">投入产出比</div><div class="roi-label">田间试验参考值</div></div>
-          <div class="roi-card outer"><div class="roi-num">1:10</div><div class="roi-label">优秀场估算</div></div>
-        </div>
-        <p style="font-size:0.8rem;opacity:0.7">※ 参考值，实际收益因管理条件而异。</p>
-      </div>
-    </div>
-  </section>
-
-</div><!-- end broiler-cn -->
-
-<!-- ── 土鸡面板 ── -->
-<div class="species-panel" id="native-cn">
-
-  <section>
-    <div class="container">
-      <h2 class="section-title">您是否也有这些困扰？</h2>
-      <p class="section-sub">土鸡养殖的三大核心痛点</p>
-      <div class="pain-grid">
-        <div class="pain-card">
-          <h3><i class="fas fa-exclamation-circle"></i> 料肉比高，养殖周期长成本高</h3>
-          <p>土鸡料肉比普遍在3.3-3.5:1，养殖周期16-20周，饲料成本是最大支出。料肉比每高0.1，每只鸡就多损失约0.3-0.5元。</p>
-        </div>
-        <div class="pain-card">
-          <h3><i class="fas fa-exclamation-circle"></i> 成活率波动，疾病损失难控</h3>
-          <p>腹水症、呼吸道疾病等是土鸡中后期最常见损失来源。每批次成活率低于95%就已开始影响总收益，药费还在持续增加。</p>
-        </div>
-        <div class="pain-card">
-          <h3><i class="fas fa-exclamation-circle"></i> 羽毛品质差，屠体溢价低</h3>
-          <p>高端市场对土鸡羽色、肤色要求严格。羽毛暗淡、啄羽、屠体评分低，直接影响市场溢价能力，品牌差异化难以建立。</p>
-        </div>
-      </div>
-      <p style="text-align:center;margin-top:24px;font-weight:500">活力旺®，从消化·免疫·代谢三层协同解决土鸡养殖核心痛点。</p>
-    </div>
-  </section>
-
-  <section class="alt">
-    <div class="container">
-      <h2 class="section-title">使用活力旺®的实际成果</h2>
-      <p class="section-sub">基于台湾红羽/黑羽土鸡实测数据 · 活力旺®田间对照试验</p>
-      <div class="result-grid">
-        <div class="result-img">
-          <img src="assets/native-chicken.png" alt="土鸡效益对比" onerror="this.style.display='none'">
-        </div>
-        <div class="result-stats">
-          <div class="stat-row"><span class="stat-label">增重效率</span><span class="stat-value">+5~8%</span></div>
-          <div class="stat-row"><span class="stat-label">料肉比</span><span class="stat-value">-3~5%</span></div>
-          <div class="stat-row"><span class="stat-label">成活率</span><span class="stat-value">+2~3%</span></div>
-          <div class="stat-row"><span class="stat-label">屠体评分</span><span class="stat-value">+15%</span></div>
-          <div class="stat-row"><span class="stat-label">出栏体重</span><span class="stat-value">2.45→2.60kg</span></div>
-          <p style="font-size:0.78rem;color:var(--muted);margin-top:12px">※ 数据来自台湾红羽/黑羽土鸡16周龄实测，建议设立同场对照组验证。</p>
-        </div>
-      </div>
-      <div class="usage-box">
-        <strong>📌 使用方式：</strong>活力旺®预混型产品，20公斤/袋，按<strong>1公斤兑1吨全价料</strong>均匀混合，开袋即用。适用红羽/黑羽土鸡全程饲养。
-      </div>
-      <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-top:20px">
-        <img src="assets/white-broiler-growth-curve-comparison.png" alt="性能对比" onerror="this.style.display='none'" style="max-width:100%;border-radius:10px;margin:8px 0">
-        <img src="assets/native-chicken-traditional-vs-innovative.jpg" alt="传统vs活力旺" onerror="this.style.display='none'" style="max-width:100%;border-radius:10px;margin:8px 0">
-      </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/native-chicken-product-ratio.jpg" alt="土鸡添加比例" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">图1：活力旺产品添加比例示意（1kg/1吨饲料）</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/native-chicken-performance-improvement.jpg" alt="土鸡性能提升对比" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">图2：土鸡性能提升效益对比｜增重+5-8%、料肉比-3-5%、成活率+2-3%</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/native-chicken-tech-mechanism.jpg" alt="土鸡核心技术机制" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">图4：活力旺核心技术三层协同作用｜消化吸收、免疫调控、代谢优化</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/native-chicken-roi-analysis.jpg" alt="土鸡ROI分析" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">图3：土鸡投资报酬率分析｜每只净利提升，ROI 1:3~1:4</p>
-            </div>
-    </div>
-            <div style="text-align:center;margin:24px 0">
-              <img src="assets/white-broiler-full-period-fattening-steps.png" alt="Full-Period Fattening Steps" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px">Fig.1: Full-Period Fattening Steps | Start 28d phase, 15% weight gain at 42d</p>
-            </div>
-            <div style="text-align:center;margin:24px 0">
-              <img src="assets/white-broiler-growth-fcr-comparison.png" alt="Growth FCR Comparison" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px">Fig.3: Growth & FCR Comparison | Traditional FCR 1.8 → VitalBoost® 1.65</p>
-            </div>
-            <div style="text-align:center;margin:24px 0">
-              <img src="assets/white-broiler-carcass-quality-comparison.png" alt="Carcass Quality Comparison" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px">Fig.4: Carcass Quality Comparison | Less abdominal fat, breast yield +5-7%</p>
-            </div>
-            <div style="text-align:center;margin:24px 0">
-              <img src="assets/white-broiler-roi-calculation.png" alt="Broiler ROI Calculation" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px">Fig.6: Broiler ROI | Net profit +顯著改善/10,000 birds, ROI 1:6～1:8</p>
-            </div>
-            <div style="text-align:center;margin:24px 0">
-              <img src="assets/white-broiler-full-period-fattening-steps.png" alt="白肉雞全期催肥步驟" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px">图1：白肉雞全期催肥實施步驟｜28天啟動後期催肥，42天出欄體重提升15%</p>
-            </div>
-            <div style="text-align:center;margin:24px 0">
-              <img src="assets/white-broiler-growth-fcr-comparison.png" alt="白肉雞生長FCR對比" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px">图3：生長與FCR對比｜傳統FCR 1.8→活力旺優化1.65</p>
-            </div>
-            <div style="text-align:center;margin:24px 0">
-              <img src="assets/white-broiler-carcass-quality-comparison.png" alt="白肉雞屠體品質對比" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px">图4：白肉雞屠體品質對比｜腹脂減少、胸肉比例提升5-7%</p>
-            </div>
-            <div style="text-align:center;margin:24px 0">
-              <img src="assets/white-broiler-roi-calculation.png" alt="白肉雞ROI計算" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px">图6：白肉雞後期催肥ROI計算｜每萬隻淨利元，投資報酬率1:6～1:8</p>
-            </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <h2 class="section-title">为什么活力得®枯草菌源蛋白酶有效？</h2>
-      <p class="section-sub">三层协同作用机制</p>
-      <div class="mech-grid">
-        <div class="mech-card">
-          <div class="mech-num">①</div>
-          <h3>消化吸收强化</h3>
-          <p>活力得®枯草菌源蛋白酶提升蛋白质、氨基酸吸收效率，肠道绒毛结构改善，饲料转化率显著提高，料肉比直降3-5%。</p>
-          <div class="mech-plain">→ 同样的土鸡料，营养真正被吸收。每公斤增重少花饲料，就是到手的利润。</div>
-        </div>
-        <div class="mech-card">
-          <div class="mech-num">②</div>
-          <h3>免疫调控强化</h3>
-          <p>活力得®枯草菌源蛋白酶激活Nrf2/ARE抗氧化通路，提升SOD活性，强化免疫防线，降低腹水症、呼吸道疾病发生率，成活率+2-3%。</p>
-          <div class="mech-plain">→ 土鸡少生病，少用药，成活率提升2-3%，就是每批多活几百只鸡。</div>
-        </div>
-        <div class="mech-card">
-          <div class="mech-num">③</div>
-          <h3>代谢优化·羽毛提升</h3>
-          <p>活力得®枯草菌源蛋白酶优化脂质代谢，促进色素沉着，改善羽毛光泽，屠体评分+15%，减少啄羽行为，提升市场溢价能力。</p>
-          <div class="mech-plain">→ 羽毛光亮、肤色均匀，屠体评分高一档，同样的鸡卖更好的价。</div>
-        </div>
-      </div>
-      <div style="margin-top:20px;text-align:center">
-        <img src="assets/white-broiler-fcr-optimization-data.png" alt="技术机制" onerror="this.style.display='none'" style="max-width:100%;border-radius:10px">
-      </div>
-    </div>
-  </section>
-
-  <section class="alt">
-    <div class="container">
-      <h2 class="section-title">品种与养殖规模数据</h2>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>品种</th><th>主要省份</th><th>出栏周龄</th><th>增重改善</th><th>料肉比改善</th><th>成活率改善</th></tr></thead>
-          <tbody>
-            <tr><td>红羽土鸡</td><td>广东、广西、福建、台湾</td><td>16-20周</td><td>+5~8%</td><td>-3~5%</td><td>+2~3%</td></tr>
-            <tr><td>黑羽土鸡</td><td>浙江、湖南、广西</td><td>16-22周</td><td>+5~8%</td><td>-3~5%</td><td>+2~3%</td></tr>
-            <tr><td>三黄鸡</td><td>广东、广西</td><td>14-18周</td><td>显著改善</td><td>显著改善</td><td>+</td></tr>
-            <tr><td>乌鸡（乌骨鸡）</td><td>江西、浙江、湖北</td><td>20-24周</td><td>+</td><td>改善显著</td><td>+</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p style="font-size:0.78rem;color:var(--muted);margin-top:10px">※ 实际效果因品种、饲养管理条件、季节而异，建议设立同场对照组验证。</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <h2 class="section-title">三阶段导入：低风险验证</h2>
-      <div class="phase-grid">
-        <div class="phase-card">
-          <div class="phase-num">1</div>
-          <h3>第一阶段：小群验证</h3>
-          <p>200只土鸡（同品种、同批次），从入栏当天开始添加，对照200只不添加，2周观察：采食量、粪便形态、精神状态。</p>
-        </div>
-        <div class="phase-card">
-          <div class="phase-num">2</div>
-          <h3>第二阶段：批次验证</h3>
-          <p>扩大至1,000只，8周记录：体重抽测、料肉比计算、成活率统计，出栏时比较屠体评分与实际收益差异。</p>
-        </div>
-        <div class="phase-card">
-          <div class="phase-num">3</div>
-          <h3>第三阶段：全场导入</h3>
-          <p>全场土鸡导入，建立品牌溢价竞争优势。羽色均匀、屠体品质稳定，高端市场准入门槛降低。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="alt">
-    <div class="container" style="text-align:center">
-      <h2 class="section-title">投入多少，得到多少？</h2>
-      <div class="roi-box">
-        <p style="font-size:1.1rem;margin-bottom:8px">投入 1 份成本</p>
-        <div style="font-size:2.5rem;margin:8px 0">→</div>
-        <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:24px;font-size:0.9rem;opacity:0.85">
-          <div>① 出栏体重+5-8% → 增重收益</div>
-          <div>② 料肉比-3-5% → 饲料节省</div>
-          <div>③ 成活率+2-3% → 损耗减少</div>
-        </div>
-        <div class="roi-cards">
-          <div class="roi-card outer"><div class="roi-num">1:4</div><div class="roi-label">保守估算</div></div>
-          <div class="roi-card center"><div class="roi-num" style="font-size:1.3rem">投入产出比</div><div class="roi-label">田间试验参考值</div></div>
-          <div class="roi-card outer"><div class="roi-num">1:8</div><div class="roi-label">优秀场估算</div></div>
-        </div>
-        <p style="font-size:0.8rem;opacity:0.7">※ 参考值，实际收益因管理条件而异。</p>
-      </div>
-      <div style="margin-top:20px">
-        <img src="assets/broiler-roi-chart.jpg" alt="ROI分析" onerror="this.style.display='none'" style="max-width:100%;border-radius:10px">
-      </div>
-    </div>
-  </section>
-
-</div><!-- end native-cn -->
-
-<!-- CTA CN -->
-<div class="cta-section">
-  <h2>准备好让您的肉禽发挥最大价值了吗？</h2>
-  <p>联系活力旺®代理商，获取白羽鸡/土鸡专属方案</p>
-  <a href="#" class="btn">立即咨询活力旺®代理商</a>
 </div>
 
-<!-- 免责 CN -->
-<div class="disclaimer">
-  <p>※ 白羽鸡数据来自PubMed 2016（胸肉+12.15%·屠体+5.88%）及MDPI 2014（肌肉抗氧化+21.5%）。土鸡数据来自活力旺®台湾红羽/黑羽土鸡田间对照试验。</p>
-  <p>※ 实际效果因品种、饲养管理条件、季节而异。建议设立同场对照组验证效益。</p>
-  <p>※ 投入产出比为参考值，不构成任何投资建议。</p>
-</div>
-
-<!-- 页脚 CN -->
-<footer>
-  <div class="footer-links">
-    <a href="index.html">首页</a><a href="swine-breeding.html">种公猪</a><a href="pregnant-sow.html">怀孕母猪</a><a href="lactating-sow.html">哺乳母猪</a><a href="nursery-pig.html">保育猪</a><a href="finisher-pig-fcr.html">育肥猪</a><a href="layer-chicken.html">蛋鸡</a><a href="broiler-fcr.html">白肉鸡/土鸡</a><a href="tilapia-survival.html">罗非鱼</a><a href="shrimp-survival.html">白虾</a><a href="livestock.html">牛羊</a>
-  </div>
-  <p>© 2026 活力旺®代理商 · 引用PubMed/MDPI文献 · 实拍图片</p>
-</footer>
-
-</div><!-- end lang-cn -->
-
-<!-- ==================== 繁體中文版 ==================== -->
-<div class="lang-tw" style="display:none">
-
-<div class="hero">
-  <div class="container">
-    <div class="hero-grid">
-      <div class="hero-text">
-        <div class="hero-tag">活力旺® 肉禽綜合方案</div>
-        <h1>白羽肉雞 · 土雞<br><span>增重·FCR·肉質全面提升</span></h1>
-        <div class="kpi-bar">
-          <div class="kpi-card"><span class="kpi-after">+12.15%</span><span class="kpi-label">白羽雞胸肉產量</span></div>
-          <div class="kpi-card"><span class="kpi-after">+5.88%</span><span class="kpi-label">屠體率</span></div>
-          <div class="kpi-card"><span class="kpi-after">-3~5%</span><span class="kpi-label">土雞料肉比</span></div>
-          <div class="kpi-card"><span class="kpi-after">+21.5%</span><span class="kpi-label">肌肉抗氧化</span></div>
-        </div>
-      </div>
-      <div class="hero-img">
-        <img src="assets/broiler-chicken-fcr-improvement.jpg" alt="白羽肉雞土雞方案" onerror="this.style.display='none'">
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="species-tabs">
-    <div class="species-tab active" data-panel="broiler-tw">🍗 白羽肉雞（快大肉雞）</div>
-    <div class="species-tab" data-panel="native-tw">🐓 土雞（紅羽/黑羽）</div>
-  </div>
-</div>
-
-<div class="species-panel active" id="broiler-tw">
-  <section><div class="container">
-    <h2 class="section-title">您是否也有這些困擾？</h2>
-    <p class="section-sub">白羽肉雞養殖的三大核心痛點</p>
-    <div class="pain-grid">
-      <div class="pain-card"><h3><i class="fas fa-exclamation-circle"></i> FCR偏高，飼料成本吃掉利潤</h3><p>行業均值FCR 1.8-2.0，飼料佔養殖成本60-65%。每多0.1的料肉比，就是純利潤的消失。</p></div>
-      <div class="pain-card"><h3><i class="fas fa-exclamation-circle"></i> 胸肉率低，高價值部位少</h3><p>深加工企業按胸肉率定價，胸肉產量低直接壓低收購價。肌肉品質不穩定，滴水損失超3%。</p></div>
-      <div class="pain-card"><h3><i class="fas fa-exclamation-circle"></i> 肉品品質不穩定，出口受阻</h3><p>肌肉脂質過氧化，肉色蒼白、口感差。歐美出口市場對品質要求嚴格，波動影響訂單。</p></div>
-    </div>
-    <p style="text-align:center;margin-top:24px;font-weight:500">活力旺®，從分子層面解決白羽雞的FCR與肉質雙重痛點。</p>
-  </div></section>
-
-  <section class="alt"><div class="container">
-    <h2 class="section-title">使用活力旺®的實際成果</h2>
-    <p class="section-sub">數據來自PubMed 2016 · MDPI 2014 · 活力旺®田間對照試驗</p>
-    <div class="result-grid">
-      <div class="result-img"><img src="assets/broiler_carcass_quality_comparison.jpg" alt="白羽雞效益對比" onerror="this.style.display='none'"></div>
-      <div class="result-stats">
-        <div class="stat-row"><span class="stat-label">胸肉產量</span><span class="stat-value">+12.15%</span></div>
-        <div class="stat-row"><span class="stat-label">屠體率</span><span class="stat-value">+5.88%</span></div>
-        <div class="stat-row"><span class="stat-label">肌肉抗氧化</span><span class="stat-value">+21.5%</span></div>
-        <div class="stat-row"><span class="stat-label">肉品質評分</span><span class="stat-value">+12.1~20.7%</span></div>
-        <div class="stat-row"><span class="stat-label">FCR</span><span class="stat-value">顯著改善</span></div>
-      </div>
-    </div>
-    <div class="usage-box"><strong>📌 使用方式：</strong>活力旺®預混型產品，20公斤/袋，按<strong>1公斤兌1噸全價料</strong>均勻混合，開袋即用。全程飼喂（0-42天）。</div>
-  </div></section>
-
-  <section><div class="container">
-    <h2 class="section-title">為什麼活力得®枯草菌源蛋白酶有效？</h2>
-    <div class="mech-grid">
-      <div class="mech-card"><div class="mech-num">①</div><h3>腸道消化效率提升</h3><p>活力得®枯草菌源蛋白酶促進蛋白質水解為小肽與氨基酸，腸道絨毛高度顯著增加，FCR直接改善（PubMed 2016）。</p><div class="mech-plain">→ 同樣的料，雞吸收更多蛋白質。肉長到胸部，不是浪費在糞便裡。</div></div>
-      <div class="mech-card"><div class="mech-num">②</div><h3>線粒體能量強化</h3><p>活力得®枯草菌源蛋白酶激活細胞色素c氧化酶，ATP合成效率+25-30%，促進肌肉蛋白合成，胸肉產量+12.15%（PubMed 2016）。</p><div class="mech-plain">→ 細胞能量更足，肌肉生長更快，出欄日齡不變但胸肉更多。</div></div>
-      <div class="mech-card"><div class="mech-num">③</div><h3>肌肉抗氧化保護</h3><p>活力得®枯草菌源蛋白酶激活Nrf2/ARE通路，肌肉抗氧化能力+21.5%，滴水損失顯著降低（MDPI 2014）。</p><div class="mech-plain">→ 肉不蒼白、不流水。送到深加工廠，少損耗多收益。</div></div>
-    </div>
-  </div></section>
-
-  <section class="alt"><div class="container">
-    <h2 class="section-title">您養的品種，效果一樣嗎？</h2>
-    <div class="table-wrap"><table>
-      <thead><tr><th>品種</th><th>主要省份</th><th>出欄日齡</th><th>胸肉改善</th><th>屠體率改善</th><th>活力旺優勢</th></tr></thead>
-      <tbody>
-        <tr><td>艾拔益加（AA+）</td><td>全國廣泛</td><td>42-45天</td><td>+12.15%</td><td>+5.88%</td><td>肉質+抗氧化</td></tr>
-        <tr><td>科寶（Cobb）500</td><td>廣東、福建、山東</td><td>42天</td><td>+12.15%</td><td>+5.88%</td><td>FCR顯著改善</td></tr>
-        <tr><td>羅斯（Ross）308</td><td>華北、山東、河南</td><td>42-45天</td><td>+12.15%</td><td>+5.88%</td><td>滴水損失↓</td></tr>
-      </tbody>
-    </table></div>
-  </div></section>
-
-  <section><div class="container">
-    <h2 class="section-title">小規模試驗，大規模獲利</h2>
-    <div class="phase-grid">
-      <div class="phase-card"><div class="phase-num">1</div><h3>第一階段：快速驗證</h3><p>1欄白羽雞（2,000-5,000羽），從進雛當天開始添加，對照1欄不添加，出欄時比較：屠體率、胸肉率、滴水損失三項指標。</p></div>
-      <div class="phase-card"><div class="phase-num">2</div><h3>第二階段：效益驗證</h3><p>擴大至3-5欄，完整記錄FCR、出欄體重、胸肉產量，計算每羽純利潤對比。</p></div>
-      <div class="phase-card"><div class="phase-num">3</div><h3>第三階段：全場導入</h3><p>全場白羽雞導入，建立「高胸肉率·低FCR·優肉質」競爭優勢。</p></div>
-    </div>
-  </div></section>
-
-  <section class="alt"><div class="container" style="text-align:center">
-    <h2 class="section-title">投入多少，得到多少？</h2>
-    <div class="roi-box">
-      <p style="font-size:1.1rem;margin-bottom:8px">投入 1 份成本</p>
-      <div style="font-size:2.5rem;margin:8px 0">→</div>
-      <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:24px;font-size:0.9rem;opacity:0.85">
-        <div>① 胸肉+12.15% → 收購溢價</div><div>② FCR改善 → 飼料成本↓</div><div>③ 肉質+21.5% → 出口競爭力↑</div>
-      </div>
-      <div class="roi-cards">
-        <div class="roi-card outer"><div class="roi-num">1:6</div><div class="roi-label">保守估算</div></div>
-        <div class="roi-card center"><div class="roi-num" style="font-size:1.3rem">投入產出比</div><div class="roi-label">田間試驗參考值</div></div>
-        <div class="roi-card outer"><div class="roi-num">1:10</div><div class="roi-label">優秀場估算</div></div>
-      </div>
-    </div>
-  </div></section>
-</div><!-- end broiler-tw -->
-
-<div class="species-panel" id="native-tw">
-  <section><div class="container">
-    <h2 class="section-title">您是否也有這些困擾？</h2>
-    <div class="pain-grid">
-      <div class="pain-card"><h3><i class="fas fa-exclamation-circle"></i> 料肉比高，養殖週期長成本高</h3><p>土雞料肉比普遍在3.3-3.5:1，養殖週期16-20週，飼料成本是最大支出。</p></div>
-      <div class="pain-card"><h3><i class="fas fa-exclamation-circle"></i> 成活率波動，疾病損失難控</h3><p>腹水症、呼吸道疾病等是土雞中後期最常見損失來源。每批次成活率低於95%就已開始影響總收益。</p></div>
-      <div class="pain-card"><h3><i class="fas fa-exclamation-circle"></i> 羽毛品質差，屠體溢價低</h3><p>高端市場對土雞羽色、膚色要求嚴格。羽毛暗淡、啄羽、屠體評分低，直接影響市場溢價能力。</p></div>
-    </div>
-  </div></section>
-
-  <section class="alt"><div class="container">
-    <h2 class="section-title">使用活力旺®的實際成果</h2>
-    <div class="result-grid">
-      <div class="result-img"><img src="assets/native-chicken.png" alt="土雞效益對比" onerror="this.style.display='none'"></div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/white-broiler-full-period-fattening-steps.png" alt="fattening steps" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">圖：白肉雞全期催肥步驟</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/white-broiler-growth-curve-comparison.png" alt="growth curve" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">圖：生長與FCR對比｜FCR 1.8→1.65</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/white-broiler-growth-fcr-comparison.png" alt="FCR comparison" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">圖：生長與FCR對比｜FCR 1.8→1.65</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/white-broiler-carcass-quality-comparison.png" alt="carcass quality" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">圖：屠體品質對比｜胸肉+5-7%</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/white-broiler-fcr-optimization-data.png" alt="FCR data" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">圖：FCR優化數據</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/white-broiler-roi-calculation.png" alt="ROI" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">圖：ROI計算｜ROI 1:6~1:8</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/feed-efficiency-triptych.jpg" alt="feed efficiency" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">圖：飼料效率三聯圖</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/native-chicken-product-ratio.jpg" alt="product ratio" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">圖：土雞產品添加比例</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/native-chicken-performance-improvement.jpg" alt="performance" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">圖：土雞性能提升對比</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/native-chicken-roi-analysis.jpg" alt="ROI analysis" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">圖：土雞ROI 1:3~1:4</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/native-chicken-tech-mechanism.jpg" alt="tech mechanism" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">圖：核心技術三層協同機制</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/native-chicken-traditional-vs-innovative.jpg" alt="comparison" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">圖：傳統飼養vs活力旺方案</p>
-            </div>
-      <div class="result-stats">
-        <div class="stat-row"><span class="stat-label">增重效率</span><span class="stat-value">+5~8%</span></div>
-        <div class="stat-row"><span class="stat-label">料肉比</span><span class="stat-value">-3~5%</span></div>
-        <div class="stat-row"><span class="stat-label">成活率</span><span class="stat-value">+2~3%</span></div>
-        <div class="stat-row"><span class="stat-label">屠體評分</span><span class="stat-value">+15%</span></div>
-        <div class="stat-row"><span class="stat-label">出欄體重</span><span class="stat-value">2.45→2.60kg</span></div>
-      </div>
-    </div>
-    <div class="usage-box"><strong>📌 使用方式：</strong>活力旺®預混型產品，20公斤/袋，按<strong>1公斤兌1噸全價料</strong>均勻混合，開袋即用。</div>
-  </div></section>
-
-  <section><div class="container">
-    <h2 class="section-title">為什麼活力得®枯草菌源蛋白酶有效？</h2>
-    <div class="mech-grid">
-      <div class="mech-card"><div class="mech-num">①</div><h3>消化吸收強化</h3><p>活力得®枯草菌源蛋白酶提升蛋白質、氨基酸吸收效率，飼料轉化率顯著提高，料肉比直降3-5%。</p><div class="mech-plain">→ 同樣的土雞料，營養真正被吸收。每公斤增重少花飼料，就是到手的利潤。</div></div>
-      <div class="mech-card"><div class="mech-num">②</div><h3>免疫調控強化</h3><p>活力得®枯草菌源蛋白酶激活Nrf2/ARE通路，提升SOD活性，強化免疫防線，降低腹水症發生率，成活率+2-3%。</p><div class="mech-plain">→ 土雞少生病，少用藥，成活率提升2-3%，就是每批多活幾百隻雞。</div></div>
-      <div class="mech-card"><div class="mech-num">③</div><h3>代謝優化·羽毛提升</h3><p>活力得®枯草菌源蛋白酶優化脂質代謝，促進色素沉著，改善羽毛光澤，屠體評分+15%。</p><div class="mech-plain">→ 羽毛光亮、膚色均勻，屠體評分高一檔，同樣的雞賣更好的價。</div></div>
-    </div>
-  </div></section>
-
-  <section class="alt"><div class="container">
-    <h2 class="section-title">品種與養殖規模數據</h2>
-    <div class="table-wrap"><table>
-      <thead><tr><th>品種</th><th>主要省份</th><th>出欄週齡</th><th>增重改善</th><th>料肉比改善</th><th>成活率改善</th></tr></thead>
-      <tbody>
-        <tr><td>紅羽土雞</td><td>廣東、廣西、福建、台灣</td><td>16-20週</td><td>+5~8%</td><td>-3~5%</td><td>+2~3%</td></tr>
-        <tr><td>黑羽土雞</td><td>浙江、湖南、廣西</td><td>16-22週</td><td>+5~8%</td><td>-3~5%</td><td>+2~3%</td></tr>
-        <tr><td>三黃雞</td><td>廣東、廣西</td><td>14-18週</td><td>顯著改善</td><td>顯著改善</td><td>+</td></tr>
-        <tr><td>烏雞（烏骨雞）</td><td>江西、浙江、湖北</td><td>20-24週</td><td>+</td><td>改善顯著</td><td>+</td></tr>
-      </tbody>
-    </table></div>
-  </div></section>
-
-  <section><div class="container">
-    <h2 class="section-title">三階段導入：低風險驗證</h2>
-    <div class="phase-grid">
-      <div class="phase-card"><div class="phase-num">1</div><h3>第一階段：小群驗證</h3><p>200隻土雞（同品種、同批次），從入欄當天開始添加，對照200隻不添加，2週觀察採食量、糞便形態、精神狀態。</p></div>
-      <div class="phase-card"><div class="phase-num">2</div><h3>第二階段：批次驗證</h3><p>擴大至1,000隻，8週記錄體重抽測、料肉比計算、成活率統計，出欄時比較屠體評分與實際收益差異。</p></div>
-      <div class="phase-card"><div class="phase-num">3</div><h3>第三階段：全場導入</h3><p>全場土雞導入，建立品牌溢價競爭優勢。羽色均勻、屠體品質穩定，高端市場准入門檻降低。</p></div>
-    </div>
-  </div></section>
-
-  <section class="alt"><div class="container" style="text-align:center">
-    <h2 class="section-title">投入多少，得到多少？</h2>
-    <div class="roi-box">
-      <div class="roi-cards">
-        <div class="roi-card outer"><div class="roi-num">1:4</div><div class="roi-label">保守估算</div></div>
-        <div class="roi-card center"><div class="roi-num" style="font-size:1.3rem">投入產出比</div><div class="roi-label">田間試驗參考值</div></div>
-        <div class="roi-card outer"><div class="roi-num">1:8</div><div class="roi-label">優秀場估算</div></div>
-      </div>
-    </div>
-  </div></section>
-</div><!-- end native-tw -->
-
-<div class="cta-section">
-  <h2>準備好讓您的肉禽發揮最大價值了嗎？</h2>
-  <p>聯繫活力旺®代理商，獲取白羽雞/土雞專屬方案</p>
-  <a href="#" class="btn">立即諮詢活力旺®代理商</a>
-</div>
-<div class="disclaimer">
-  <p>※ 白羽雞數據來自PubMed 2016（胸肉+12.15%·屠體+5.88%）及MDPI 2014（肌肉抗氧化+21.5%）。土雞數據來自活力旺®台灣紅羽/黑羽土雞田間對照試驗。</p>
-  <p>※ 實際效果因品種、飼養管理條件、季節而異。建議設立同場對照組驗證效益。投入產出比為參考值，不構成任何投資建議。</p>
-</div>
-<footer>
-  <div class="footer-links">
-    <a href="index.html">首頁</a><a href="swine-breeding.html">種公豬</a><a href="pregnant-sow.html">懷孕母豬</a><a href="finisher-pig-fcr.html">育肥豬</a><a href="layer-chicken.html">蛋雞</a><a href="broiler-fcr.html">白肉雞/土雞</a><a href="tilapia-survival.html">吳郭魚</a><a href="shrimp-survival.html">白蝦</a><a href="livestock.html">牛羊</a>
-  </div>
-  <p>© 2026 活力旺®代理商</p>
-</footer>
-</div><!-- end lang-tw -->
-
-<!-- ==================== English Version ==================== -->
-<div class="lang-en" style="display:none">
-
-<div class="hero">
-  <div class="container">
-    <div class="hero-grid">
-      <div class="hero-text">
-        <div class="hero-tag">VitalBoost® Poultry Program</div>
-        <h1>Broiler · Native Chicken<br><span>Growth · FCR · Meat Quality Upgrade</span></h1>
-        <div class="kpi-bar">
-          <div class="kpi-card"><span class="kpi-after">+12.15%</span><span class="kpi-label">Broiler Breast Yield</span></div>
-          <div class="kpi-card"><span class="kpi-after">+5.88%</span><span class="kpi-label">Carcass Rate</span></div>
-          <div class="kpi-card"><span class="kpi-after">-3~5%</span><span class="kpi-label">Native Chicken FCR</span></div>
-          <div class="kpi-card"><span class="kpi-after">+21.5%</span><span class="kpi-label">Muscle Antioxidant</span></div>
-        </div>
-      </div>
-      <div class="hero-img">
-        <img src="assets/broiler-chicken-fcr-improvement.jpg" alt="Broiler Native Chicken Program" onerror="this.style.display='none'">
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="species-tabs">
-    <div class="species-tab active" data-panel="broiler-en">🍗 White Broiler (Fast-Growth)</div>
-    <div class="species-tab" data-panel="native-en">🐓 Native Chicken (Heritage Breed)</div>
-  </div>
-</div>
-
-<div class="species-panel active" id="broiler-en">
-  <section><div class="container">
-    <h2 class="section-title">Do You Also Face These Challenges?</h2>
-    <div class="pain-grid">
-      <div class="pain-card"><h3><i class="fas fa-exclamation-circle"></i> High FCR Eating into Margin</h3><p>Industry FCR averages 1.8-2.0. Feed is 60-65% of cost. Every 0.1 FCR increase is pure profit lost. Broiler export requires strict FCR standards.</p></div>
-      <div class="pain-card"><h3><i class="fas fa-exclamation-circle"></i> Low Breast Yield, Less Premium Value</h3><p>Processors price by breast yield. Low breast rate directly lowers purchase price. Unstable meat quality with drip loss >3%.</p></div>
-      <div class="pain-card"><h3><i class="fas fa-exclamation-circle"></i> Inconsistent Meat Quality, Export Barriers</h3><p>Muscle lipid oxidation causes pale color and poor texture. EU/US export markets require strict quality standards.</p></div>
-    </div>
-    <p style="text-align:center;margin-top:24px;font-weight:500">VitalBoost® addresses broiler FCR and meat quality at the molecular level.</p>
-  </div></section>
-
-  <section class="alt"><div class="container">
-    <h2 class="section-title">Real Results with VitalBoost®</h2>
-    <p class="section-sub">Data from PubMed 2016 · MDPI 2014 · VitalBoost® field trials</p>
-    <div class="result-grid">
-      <div class="result-img"><img src="assets/broiler_carcass_quality_comparison.jpg" alt="Broiler Results" onerror="this.style.display='none'"></div>
-      <div class="result-stats">
-        <div class="stat-row"><span class="stat-label">Breast Yield</span><span class="stat-value">+12.15%</span></div>
-        <div class="stat-row"><span class="stat-label">Carcass Rate</span><span class="stat-value">+5.88%</span></div>
-        <div class="stat-row"><span class="stat-label">Muscle Antioxidant</span><span class="stat-value">+21.5%</span></div>
-        <div class="stat-row"><span class="stat-label">Meat Quality Score</span><span class="stat-value">+12.1~20.7%</span></div>
-        <div class="stat-row"><span class="stat-label">FCR</span><span class="stat-value">Significantly improved</span></div>
-      </div>
-    </div>
-    <div class="usage-box"><strong>📌 Usage:</strong> VitalBoost® pre-mixed 20kg/bag. Mix <strong>20kg per tonne</strong> of complete feed. Ready to use. Full-cycle (day 0-42).</div>
-  </div></section>
-
-  <section><div class="container">
-    <h2 class="section-title">Why Does VitalBoost® Protease Work?</h2>
-    <div class="mech-grid">
-      <div class="mech-card"><div class="mech-num">①</div><h3>Gut Digestive Efficiency</h3><p>VitalBoost® Protease enhances protein hydrolysis to small peptides and amino acids. Gut villi height significantly increases, improving absorption. FCR directly improves (PubMed 2016).</p><div class="mech-plain">→ Same feed, more protein absorbed. Nutrients go to breast muscle, not wasted in manure.</div></div>
-      <div class="mech-card"><div class="mech-num">②</div><h3>Mitochondrial Energy</h3><p>VitalBoost® Protease activates cytochrome c oxidase, boosting ATP synthesis efficiency +25-30%. Promotes muscle protein synthesis, breast yield +12.15% (PubMed 2016).</p><div class="mech-plain">→ More cellular energy, faster muscle growth. Same days to market, more breast meat.</div></div>
-      <div class="mech-card"><div class="mech-num">③</div><h3>Muscle Antioxidant Protection</h3><p>VitalBoost® Protease activates Nrf2/ARE pathway, reducing muscle lipid oxidation. Muscle antioxidant capacity +21.5%, drip loss significantly reduced (MDPI 2014).</p><div class="mech-plain">→ No pale color, no drip loss. Less waste at the processor, more value per bird.</div></div>
-    </div>
-  </div></section>
-
-  <section class="alt"><div class="container">
-    <h2 class="section-title">Does It Work for Your Breed?</h2>
-    <div class="table-wrap"><table>
-      <thead><tr><th>Breed</th><th>Main Provinces</th><th>Days to Market</th><th>Breast Improvement</th><th>Carcass Improvement</th><th>VitalBoost® Advantage</th></tr></thead>
-      <tbody>
-        <tr><td>Arbor Acres (AA+)</td><td>Nationwide</td><td>42-45 days</td><td>+12.15%</td><td>+5.88%</td><td>Meat quality + antioxidant</td></tr>
-        <tr><td>Cobb 500</td><td>Guangdong, Fujian, Shandong</td><td>42 days</td><td>+12.15%</td><td>+5.88%</td><td>FCR significantly improved</td></tr>
-        <tr><td>Ross 308</td><td>North China, Shandong, Henan</td><td>42-45 days</td><td>+12.15%</td><td>+5.88%</td><td>Drip loss reduced</td></tr>
-      </tbody>
-    </table></div>
-  </div></section>
-
-  <section><div class="container">
-    <h2 class="section-title">Small Trial, Large Profit</h2>
-    <div class="phase-grid">
-      <div class="phase-card"><div class="phase-num">1</div><h3>Phase 1: Rapid Verification</h3><p>1 pen of broilers (2,000-5,000 birds). Add from day 1. Control pen without additive. At slaughter: compare carcass rate, breast yield, drip loss.</p></div>
-      <div class="phase-card"><div class="phase-num">2</div><h3>Phase 2: Profit Verification</h3><p>Expand to 3-5 pens. Record FCR, live weight, breast yield, processor price difference. Calculate per-bird profit comparison.</p></div>
-      <div class="phase-card"><div class="phase-num">3</div><h3>Phase 3: Full Farm</h3><p>Full farm rollout. Build competitive advantage of high breast yield, low FCR, premium meat quality. Supports BAP/GlobalG.A.P. certification.</p></div>
-    </div>
-  </div></section>
-
-  <section class="alt"><div class="container" style="text-align:center">
-    <h2 class="section-title">Investment & Return</h2>
-    <div class="roi-box">
-      <div class="roi-cards">
-        <div class="roi-card outer"><div class="roi-num">1:6</div><div class="roi-label">Conservative</div></div>
-        <div class="roi-card center"><div class="roi-num" style="font-size:1.3rem">ROI Ratio</div><div class="roi-label">Field Trial Reference</div></div>
-        <div class="roi-card outer"><div class="roi-num">1:10</div><div class="roi-label">Top Farms</div></div>
-      </div>
-    </div>
-  </div></section>
-</div><!-- end broiler-en -->
-
-<div class="species-panel" id="native-en">
-  <section><div class="container">
-    <h2 class="section-title">Do You Also Face These Challenges?</h2>
-    <div class="pain-grid">
-      <div class="pain-card"><h3><i class="fas fa-exclamation-circle"></i> High FCR, Long Cycle, High Cost</h3><p>Native chicken FCR averages 3.3-3.5:1, with 16-20 week cycles. Feed is the largest cost. Every 0.1 FCR increase means real money lost per bird.</p></div>
-      <div class="pain-card"><h3><i class="fas fa-exclamation-circle"></i> Survival Rate Fluctuation</h3><p>Ascites and respiratory disease are the most common mid-to-late losses in native chickens. Below 95% survival already affects total profitability.</p></div>
-      <div class="pain-card"><h3><i class="fas fa-exclamation-circle"></i> Poor Feather Quality, Low Carcass Premium</h3><p>Premium markets require consistent plumage color and skin tone. Dull feathers, feather pecking, and low carcass scores directly reduce market premium.</p></div>
-    </div>
-  </div></section>
-
-  <section class="alt"><div class="container">
-    <h2 class="section-title">Real Results with VitalBoost®</h2>
-    <div class="result-grid">
-      <div class="result-img"><img src="assets/native-chicken.png" alt="Native Chicken Results" onerror="this.style.display='none'"></div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/white-broiler-full-period-fattening-steps.png" alt="fattening steps" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">Fig: White broiler full-period fattening steps</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/white-broiler-growth-curve-comparison.png" alt="growth curve" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">Fig: Growth & FCR comparison | Traditional FCR 1.8 → 1.65</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/white-broiler-growth-fcr-comparison.png" alt="FCR comparison" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">Fig: Growth & FCR comparison | Traditional FCR 1.8 → 1.65</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/white-broiler-carcass-quality-comparison.png" alt="carcass quality" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">Fig: Carcass quality comparison | Breast yield +5-7%</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/white-broiler-fcr-optimization-data.png" alt="FCR data" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">Fig: FCR optimization data</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/white-broiler-roi-calculation.png" alt="ROI" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">Fig: ROI calculation | ROI 1:6~1:8</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/feed-efficiency-triptych.jpg" alt="feed efficiency" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">Fig: Feed efficiency triptych</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/native-chicken-product-ratio.jpg" alt="product ratio" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">Fig: Native chicken product add ratio</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/native-chicken-performance-improvement.jpg" alt="performance" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">Fig: Native chicken performance improvement</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/native-chicken-roi-analysis.jpg" alt="ROI analysis" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">Fig: Native chicken ROI 1:3~1:4</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/native-chicken-tech-mechanism.jpg" alt="tech mechanism" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">Fig: Native chicken tech mechanism</p>
-            </div>
-            <div class="img-fullwidth" style="margin:20px 0">
-              <img src="assets/native-chicken-traditional-vs-innovative.jpg" alt="comparison" style="max-width:100%;border-radius:10px" onerror="this.style.display='none'">
-              <p style="font-size:0.82rem;color:#666;margin-top:8px;text-align:center">Fig: Traditional vs VitalBoost® method</p>
-            </div>
-      <div class="result-stats">
-        <div class="stat-row"><span class="stat-label">Growth Rate</span><span class="stat-value">+5~8%</span></div>
-        <div class="stat-row"><span class="stat-label">FCR</span><span class="stat-value">-3~5%</span></div>
-        <div class="stat-row"><span class="stat-label">Survival Rate</span><span class="stat-value">+2~3%</span></div>
-        <div class="stat-row"><span class="stat-label">Carcass Score</span><span class="stat-value">+15%</span></div>
-        <div class="stat-row"><span class="stat-label">Slaughter Weight</span><span class="stat-value">2.45→2.60kg</span></div>
-      </div>
-    </div>
-    <div class="usage-box"><strong>📌 Usage:</strong> VitalBoost® pre-mixed 20kg/bag. Mix <strong>20kg per tonne</strong> of complete feed. Suitable for red/black plumage native chickens full cycle.</div>
-  </div></section>
-
-  <section><div class="container">
-    <h2 class="section-title">Why Does VitalBoost® Protease Work?</h2>
-    <div class="mech-grid">
-      <div class="mech-card"><div class="mech-num">①</div><h3>Digestive Efficiency</h3><p>VitalBoost® Protease improves protein and amino acid absorption efficiency. Feed conversion rate significantly improved, FCR drops 3-5%.</p><div class="mech-plain">→ Same feed, more nutrients actually absorbed. Less feed per kg of gain — pure profit.</div></div>
-      <div class="mech-card"><div class="mech-num">②</div><h3>Immune Regulation</h3><p>VitalBoost® Protease activates Nrf2/ARE pathway, boosts SOD activity, strengthens immune defense, reduces ascites incidence, survival rate +2-3%.</p><div class="mech-plain">→ Fewer sick birds, less medication. +2-3% survival = hundreds more birds per batch.</div></div>
-      <div class="mech-card"><div class="mech-num">③</div><h3>Metabolism · Feather Quality</h3><p>VitalBoost® Protease optimizes lipid metabolism, promotes pigment deposition, improves feather sheen, carcass score +15%, reduces feather pecking.</p><div class="mech-plain">→ Glossy plumage, uniform skin tone, higher carcass grade = better market price for the same bird.</div></div>
-    </div>
-  </div></section>
-
-  <section class="alt"><div class="container">
-    <h2 class="section-title">Does It Work for Your Breed?</h2>
-    <div class="table-wrap"><table>
-      <thead><tr><th>Breed</th><th>Main Provinces</th><th>Weeks to Market</th><th>Growth Improvement</th><th>FCR Improvement</th><th>Survival Improvement</th></tr></thead>
-      <tbody>
-        <tr><td>Red Plumage Native</td><td>Guangdong, Guangxi, Fujian, Taiwan</td><td>16-20 weeks</td><td>+5~8%</td><td>-3~5%</td><td>+2~3%</td></tr>
-        <tr><td>Black Plumage Native</td><td>Zhejiang, Hunan, Guangxi</td><td>16-22 weeks</td><td>+5~8%</td><td>-3~5%</td><td>+2~3%</td></tr>
-        <tr><td>Sanhuang (3-Yellow)</td><td>Guangdong, Guangxi</td><td>14-18 weeks</td><td>Significant</td><td>Significant</td><td>+</td></tr>
-        <tr><td>Silkie (Wuji)</td><td>Jiangxi, Zhejiang, Hubei</td><td>20-24 weeks</td><td>+</td><td>Significant</td><td>+</td></tr>
-      </tbody>
-    </table></div>
-  </div></section>
-
-  <section><div class="container">
-    <h2 class="section-title">Small Trial, Large Profit</h2>
-    <div class="phase-grid">
-      <div class="phase-card"><div class="phase-num">1</div><h3>Phase 1: Small Group Trial</h3><p>200 native chickens (same breed, same batch). Add from day 1 of housing. Control group: 200 without additive. 2-week observation of feed intake, fecal quality, vitality.</p></div>
-      <div class="phase-card"><div class="phase-num">2</div><h3>Phase 2: Batch Verification</h3><p>Expand to 1,000 birds. 8-week record of body weight sampling, FCR calculation, survival rate. Compare carcass score and actual revenue at slaughter.</p></div>
-      <div class="phase-card"><div class="phase-num">3</div><h3>Phase 3: Full Farm</h3><p>Full farm rollout. Build brand premium advantage. Consistent plumage, stable carcass quality, lower barrier to premium market entry.</p></div>
-    </div>
-  </div></section>
-
-  <section class="alt"><div class="container" style="text-align:center">
-    <h2 class="section-title">Investment & Return</h2>
-    <div class="roi-box">
-      <div class="roi-cards">
-        <div class="roi-card outer"><div class="roi-num">1:4</div><div class="roi-label">Conservative</div></div>
-        <div class="roi-card center"><div class="roi-num" style="font-size:1.3rem">ROI Ratio</div><div class="roi-label">Field Trial Reference</div></div>
-        <div class="roi-card outer"><div class="roi-num">1:8</div><div class="roi-label">Top Farms</div></div>
-      </div>
-    </div>
-  </div></section>
-</div><!-- end native-en -->
-
-<div class="cta-section">
-  <h2>Ready to maximize your poultry farm performance?</h2>
-  <p>Contact VitalBoost® distributor for broiler/native chicken program</p>
-  <a href="#" class="btn">Contact VitalBoost® Distributor</a>
-</div>
-<div class="disclaimer">
-  <p>※ Broiler data from PubMed 2016 (breast +12.15%, carcass +5.88%) and MDPI 2014 (muscle antioxidant +21.5%). Native chicken data from VitalBoost® Taiwan field control trials.</p>
-  <p>※ Results vary by breed, management conditions, and season. Recommend same-farm control group. ROI is reference only, not investment advice.</p>
-</div>
-<footer>
-  <div class="footer-links">
-    <a href="index.html">Home</a><a href="swine-breeding.html">Boar</a><a href="layer-chicken.html">Layer</a><a href="broiler-fcr.html">Broiler/Native</a><a href="tilapia-survival.html">Tilapia</a><a href="shrimp-survival.html">Shrimp</a><a href="livestock.html">Livestock</a>
-  </div>
-  <p>© 2026 VitalBoost® Distributor · Cited PubMed/MDPI · Field Photography</p>
-</footer>
-</div><!-- end lang-en -->
-
-<div class="back-top" id="backTop"><i class="fas fa-arrow-up" style="color:var(--primary)"></i></div>
+<div class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></div>
 
 <script>
-// 語言切換
-function switchLang(lang) {
-  document.querySelectorAll('.lang-cn,.lang-tw,.lang-en').forEach(el => el.style.display = 'none');
-  document.querySelector('.lang-' + lang).style.display = 'block';
-  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-  event.target.classList.add('active');
-  document.documentElement.lang = lang === 'cn' ? 'zh-CN' : lang === 'tw' ? 'zh-TW' : 'en';
-}
-document.querySelectorAll('.lang-btn').forEach(btn => {
-  btn.addEventListener('click', e => switchLang(btn.getAttribute('data-lang')));
-});
+    function switchLang(lang) {
+        document.querySelectorAll('.lang-cn,.lang-tw,.lang-en').forEach(el => el.style.display = 'none');
+        document.querySelector('.lang-' + lang).style.display = 'block';
+        document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+        event.target.classList.add('active');
+        document.documentElement.lang = lang === 'cn' ? 'zh-CN' : lang === 'tw' ? 'zh-TW' : 'en';
+        // 触发每个语言内的物种tab默认显示
+        const langDiv = document.querySelector('.lang-' + lang);
+        if (langDiv) {
+            const activeTab = langDiv.querySelector('.species-tab.active');
+            if (activeTab) {
+                const species = activeTab.dataset.species;
+                const speciesId = lang + '-' + species;
+                langDiv.querySelectorAll('.species-content').forEach(c => c.style.display = 'none');
+                const target = document.getElementById(speciesId);
+                if (target) target.style.display = 'block';
+            }
+        }
+    }
+    function openLightbox(src) {
+        document.getElementById('lightbox').classList.add('active');
+        document.getElementById('lightbox-img').src = src;
+    }
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) { switchLang(this.getAttribute('data-lang')); });
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.lang-tw,.lang-en').forEach(el => el.style.display = 'none');
+        // 确保简体中文默认显示白羽肉鸡
+        const cnBroiler = document.getElementById('cn-broiler');
+        if (cnBroiler) cnBroiler.style.display = 'block';
+        const twBroiler = document.getElementById('tw-broiler');
+        if (twBroiler) twBroiler.style.display = 'block';
+        const enBroiler = document.getElementById('en-broiler');
+        if (enBroiler) enBroiler.style.display = 'block';
+    });
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) backToTop.style.opacity = '1';
+        else backToTop.style.opacity = '0';
+    });
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-// 物種切換
-document.querySelectorAll('.species-tab').forEach(tab => {
-  tab.addEventListener('click', function() {
-    const panelId = this.getAttribute('data-panel');
-    const parent = this.closest('.lang-cn, .lang-tw, .lang-en');
-    parent.querySelectorAll('.species-tab').forEach(t => t.classList.remove('active'));
-    parent.querySelectorAll('.species-panel').forEach(p => p.classList.remove('active'));
-    this.classList.add('active');
-    document.getElementById(panelId).classList.add('active');
-  });
-});
-
-// 回頂
-const backTop = document.getElementById('backTop');
-window.addEventListener('scroll', () => { backTop.style.opacity = window.scrollY > 300 ? '1' : '0'; });
-backTop.addEventListener('click', () => window.scrollTo({top:0,behavior:'smooth'}));
-
-// Lightbox
-document.querySelectorAll('img:not(.lightbox img)').forEach(img => {
-  img.style.cursor = 'pointer';
-  img.addEventListener('click', () => {
-    document.getElementById('lb-img').src = img.src;
-    document.getElementById('lightbox').style.display = 'flex';
-  });
-});
+    // 物种Tab切换（每个语言内独立）
+    document.querySelectorAll('.lang-cn, .lang-tw, .lang-en').forEach(langDiv => {
+        langDiv.querySelectorAll('.species-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                const lang = langDiv.className.replace('lang-', '');
+                const species = tab.dataset.species;
+                langDiv.querySelectorAll('.species-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                langDiv.querySelectorAll('.species-content').forEach(c => c.style.display = 'none');
+                document.getElementById(lang + '-' + species).style.display = 'block';
+            });
+        });
+    });
 </script>
+<footer style="background:#1a3a1a;color:#ddd;padding:32px 16px 20px;margin-top:48px;text-align:center;font-size:.78rem;line-height:1.9">
+<div style="max-width:1280px;margin:0 auto">
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px 20px;margin-bottom:20px">
+<a href="index.html" style="color:#ddd;text-decoration:none">首頁</a>
+<a href="swine-breeding.html" style="color:#ddd;text-decoration:none">種公豬</a>
+<a href="pregnant-sow.html" style="color:#ddd;text-decoration:none">懷孕母豬</a>
+<a href="lactating-sow.html" style="color:#ddd;text-decoration:none">哺乳母豬</a>
+<a href="nursery-pig.html" style="color:#ddd;text-decoration:none">保育豬</a>
+<a href="finisher-pig-fcr.html" style="color:#ddd;text-decoration:none">育肥豬</a>
+<a href="layer-chicken.html" style="color:#ddd;text-decoration:none">蛋雞</a>
+<a href="broiler-fcr.html" style="color:#ddd;text-decoration:none">白肉雞·土雞</a>
+<a href="breeder-chicken.html" style="color:#ddd;text-decoration:none">種雞</a>
+<a href="tilapia-survival.html" style="color:#ddd;text-decoration:none">羅非魚</a>
+<a href="shrimp-survival.html" style="color:#ddd;text-decoration:none">白蝦</a>
+<a href="livestock.html" style="color:#ddd;text-decoration:none">牛羊</a>
+</div>
+<div style="border-top:1px solid rgba(255,255,255,.15);padding-top:16px;margin-top:16px">
+© 2026 活力旺®代理商 · 活力旺®活力得®枯草菌源蛋白酶 · 專業動物營養飼料添加劑
+</div>
+</div>
+</footer>
 </body>
 </html>
