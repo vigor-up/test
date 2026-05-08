@@ -322,6 +322,73 @@ tr:nth-child(even) td { background:var(--paper); }
   .evidence-grid{grid-template-columns:1fr;}
   .roi-benefits-list{flex-direction:column;}
 }
+
+/* ── BROILER RESULTS FULL-WIDTH LAYOUT ── */
+.broiler-compare {
+  width:100%;
+  border-radius:var(--r-lg);
+  overflow:hidden;
+  margin-bottom:var(--s4);
+  box-shadow:var(--shadow-md);
+}
+.broiler-compare img {
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:var(--r-lg);
+}
+.broiler-compare__caption {
+  background:var(--ink);
+  color:var(--white);
+  padding:var(--s2) var(--s3);
+  font-size:var(--text-xs);
+  text-align:center;
+  letter-spacing:.04em;
+}
+.kpi-strip {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:var(--s2);
+  margin:var(--s3) 0;
+}
+@media(min-width:600px){ .kpi-strip { grid-template-columns:repeat(3,1fr); } }
+@media(min-width:900px){ .kpi-strip { grid-template-columns:repeat(5,1fr); } }
+.kpi-strip__card {
+  background:var(--white);
+  border:1px solid var(--mist);
+  border-radius:var(--r-md);
+  padding:var(--s2) var(--s3);
+  text-align:center;
+  box-shadow:var(--shadow-xs);
+}
+.kpi-strip__before {
+  font-size:var(--text-xs);
+  color:var(--mid);
+  text-decoration:line-through;
+}
+.kpi-strip__after {
+  font-family:'DM Mono',monospace;
+  font-size:clamp(1.1rem,3vw,1.5rem);
+  font-weight:700;
+  color:var(--emerald);
+  line-height:1.1;
+}
+.kpi-strip__arrow {
+  font-size:var(--text-xs);
+  color:var(--gold);
+  font-weight:700;
+}
+.kpi-strip__label {
+  font-size:var(--text-xs);
+  color:var(--mid);
+  margin-top:4px;
+  line-height:1.3;
+}
+.kpi-strip__ref {
+  font-size:10px;
+  color:var(--mid);
+  opacity:.7;
+}
 </style>
 </head>
 <body>
@@ -422,20 +489,43 @@ tr:nth-child(even) td { background:var(--paper); }
   <div class="container">
     <div class="section-label">关键成效 · 白羽肉鸡</div>
     <h2 class="section-title">使用肥力寶®的实际成果</h2>
-    <div class="results-row">
-      <div class="results-row__img">
-        <img src="assets/broiler-chicken-fcr-improvement.jpg" alt="白羽肉鸡FCR改善实测" loading="lazy" onerror="this.style.display='none'">
+    <!-- 全寬對比圖 -->
+    <div class="broiler-compare">
+      <img src="assets/broiler-chicken-fcr-improvement.jpg" alt="白羽肉鸡传统vs肥力寶对比" loading="lazy" onerror="this.style.display='none'">
+      <div class="broiler-compare__caption">左：傳統養殖 65%胸肉 / 右：肥力寶® 73.24%胸肉 · 腹部脂肪顯著減少</div>
+    </div>
+    <!-- 5格KPI數據卡 -->
+    <div class="kpi-strip">
+      <div class="kpi-strip__card">
+        <div class="kpi-strip__before">65%</div>
+        <div class="kpi-strip__arrow">↑</div>
+        <div class="kpi-strip__after">73.24%</div>
+        <div class="kpi-strip__label">胸肉比例<br><span class="kpi-strip__ref">+12.15%</span></div>
       </div>
-      <div class="results-row__stats">
-        <ul class="stat-list">
-          <li><span class="stat-label">胸肉比例</span><span class="stat-value">65% → 73.24%</span><span class="stat-change">↑+12.15%</span></li>
-          <li><span class="stat-label">屠体率</span><span class="stat-value">82% → 86.82%</span><span class="stat-change">↑+5.88%</span></li>
-          <li><span class="stat-label">FCR 料肉比</span><span class="stat-value">1.80 → 1.62</span><span class="stat-change">↓8–12%</span></li>
-          <li><span class="stat-label">出栏体重（42天）</span><span class="stat-value">+15–20%</span></li>
-          <li><span class="stat-label">肌肉抗氧化</span><span class="stat-value">+21.5%</span><span style="font-size:var(--text-xs);color:var(--mid);">MDPI 2014</span></li>
-          <li><span class="stat-label">滴水损失</span><span class="stat-value">显著降低</span><span style="font-size:var(--text-xs);color:var(--mid);">PSE肉发生率↓</span></li>
-        </ul>
-        <div class="usage-note" style="margin-top:var(--s4);">
+      <div class="kpi-strip__card">
+        <div class="kpi-strip__before">82%</div>
+        <div class="kpi-strip__arrow">↑</div>
+        <div class="kpi-strip__after">86.82%</div>
+        <div class="kpi-strip__label">屠体率<br><span class="kpi-strip__ref">+5.88%</span></div>
+      </div>
+      <div class="kpi-strip__card">
+        <div class="kpi-strip__before">1.80</div>
+        <div class="kpi-strip__arrow">↓</div>
+        <div class="kpi-strip__after">1.62</div>
+        <div class="kpi-strip__label">FCR 料肉比<br><span class="kpi-strip__ref">↓8–12%</span></div>
+      </div>
+      <div class="kpi-strip__card">
+        <div class="kpi-strip__arrow">↑</div>
+        <div class="kpi-strip__after">+15–20%</div>
+        <div class="kpi-strip__label">出栏体重<br><span class="kpi-strip__ref">42天</span></div>
+      </div>
+      <div class="kpi-strip__card">
+        <div class="kpi-strip__arrow">↑</div>
+        <div class="kpi-strip__after">+21.5%</div>
+        <div class="kpi-strip__label">肌肉抗氧化<br><span class="kpi-strip__ref">MDPI 2014</span></div>
+      </div>
+    </div>
+    <div class="usage-note" style="margin-top:var(--s4);">
           <strong>📌 添加规格与预混操作</strong>
           <p>肥力寶®肉鸡强化料，每吨全价饲料添加 <strong>1 kg</strong>。</p>
           <p><strong>⚠️ 二阶段预混（必须）：</strong>1 kg直接投入1吨饲料极易分布不均，导致部分鸡只摄入不足或过量。<br>
@@ -449,7 +539,7 @@ tr:nth-child(even) td { background:var(--paper); }
       <img src="assets/white-broiler-growth-curve-comparison.png" alt="白羽肉鸡生长曲线对比" loading="lazy" onerror="this.style.display='none'">
 </div>
     <div class="img-pair">
-<img src="assets/broiler_carcass_quality_comparison.jpg" alt="屠体品质对比" loading="lazy" onerror="this.style.display='none'">
+<img src="assets/broiler-chicken-fcr-improvement.jpg" alt="白羽肉鸡胸肉对比图" loading="lazy" onerror="this.style.display='none'">
     </div>
   </div>
 </section>
@@ -623,8 +713,7 @@ tr:nth-child(even) td { background:var(--paper); }
       </div>
     </div>
     <div class="img-pair">
-      <img src="assets/native-chicken-performance-improvement.jpg" alt="土鸡性能提升对比" loading="lazy" onerror="this.style.display='none'">
-      <img src="assets/native-chicken-product-ratio.jpg" alt="土鸡产品添加比例" loading="lazy" onerror="this.style.display='none'">
+<img src="assets/native-chicken-product-ratio.jpg" alt="土鸡产品添加比例" loading="lazy" onerror="this.style.display='none'">
     </div>
   </div>
 </section>
@@ -751,20 +840,19 @@ tr:nth-child(even) td { background:var(--paper); }
 </div></section>
 <section class="section section--paper"><div class="container">
   <div class="section-label">關鍵成效 · 白羽肉雞</div><h2 class="section-title">使用肥力寶®的實際成果</h2>
-  <div class="results-row">
-    <div class="results-row__img">
-      <img src="assets/broiler-chicken-fcr-improvement.jpg" alt="白羽肉雞FCR改善實測" loading="lazy" onerror="this.style.display='none'">
+      <!-- 全寬對比圖 -->
+    <div class="broiler-compare">
+      <img src="assets/broiler-chicken-fcr-improvement.jpg" alt="白羽肉雞傳統vs肥力寶對比" loading="lazy" onerror="this.style.display='none'">
+      <div class="broiler-compare__caption">左：傳統養殖 65%胸肉 / 右：肥力寶® 73.24%胸肉 · 腹部脂肪顯著減少</div>
     </div>
-    <div class="results-row__stats">
-      <ul class="stat-list">
-        <li><span class="stat-label">胸肉比例</span><span class="stat-value">65% → 73.24%</span><span class="stat-change">↑+12.15%</span></li>
-        <li><span class="stat-label">屠體率</span><span class="stat-value">82% → 86.82%</span><span class="stat-change">↑+5.88%</span></li>
-        <li><span class="stat-label">FCR 料肉比</span><span class="stat-value">1.80 → 1.62</span><span class="stat-change">↓8–12%</span></li>
-        <li><span class="stat-label">出欄體重（42天）</span><span class="stat-value">+15–20%</span></li>
-        <li><span class="stat-label">肌肉抗氧化</span><span class="stat-value">+21.5%</span><span style="font-size:var(--text-xs);color:var(--mid);">MDPI 2014</span></li>
-        <li><span class="stat-label">滴水損失</span><span class="stat-value">顯著降低</span></li>
-      </ul>
-      <div class="usage-note" style="margin-top:var(--s4);">
+    <div class="kpi-strip">
+      <div class="kpi-strip__card"><div class="kpi-strip__before">65%</div><div class="kpi-strip__arrow">↑</div><div class="kpi-strip__after">73.24%</div><div class="kpi-strip__label">胸肉比例<br><span class="kpi-strip__ref">+12.15%</span></div></div>
+      <div class="kpi-strip__card"><div class="kpi-strip__before">82%</div><div class="kpi-strip__arrow">↑</div><div class="kpi-strip__after">86.82%</div><div class="kpi-strip__label">屠體率<br><span class="kpi-strip__ref">+5.88%</span></div></div>
+      <div class="kpi-strip__card"><div class="kpi-strip__before">1.80</div><div class="kpi-strip__arrow">↓</div><div class="kpi-strip__after">1.62</div><div class="kpi-strip__label">FCR 料肉比<br><span class="kpi-strip__ref">↓8–12%</span></div></div>
+      <div class="kpi-strip__card"><div class="kpi-strip__arrow">↑</div><div class="kpi-strip__after">+15–20%</div><div class="kpi-strip__label">出欄體重<br><span class="kpi-strip__ref">42天</span></div></div>
+      <div class="kpi-strip__card"><div class="kpi-strip__arrow">↑</div><div class="kpi-strip__after">+21.5%</div><div class="kpi-strip__label">肌肉抗氧化<br><span class="kpi-strip__ref">MDPI 2014</span></div></div>
+    </div>
+    <div class="usage-note" style="margin-top:var(--s4);">
         <strong>📌 添加規格與預混操作</strong>
         <p>肥力寶®肉雞強化料，每噸全價飼料添加 <strong>1 kg</strong>。</p>
         <p><strong>⚠️ 二階段預混（必須）：</strong>1 kg直接投入1噸飼料極易分布不均，導致部分雞只攝入不足或過量。<br>
@@ -778,7 +866,7 @@ tr:nth-child(even) td { background:var(--paper); }
     <img src="assets/white-broiler-growth-curve-comparison.png" alt="白羽肉雞生長曲線對比" loading="lazy" onerror="this.style.display='none'">
 </div>
   <div class="img-pair">
-<img src="assets/broiler_carcass_quality_comparison.jpg" alt="屠體品質對比" loading="lazy" onerror="this.style.display='none'">
+<img src="assets/broiler-chicken-fcr-improvement.jpg" alt="白羽肉雞胸肉對比圖" loading="lazy" onerror="this.style.display='none'">
   </div>
 </div></section>
 <section class="section"><div class="container">
@@ -862,8 +950,7 @@ tr:nth-child(even) td { background:var(--paper); }
     </div>
   </div>
   <div class="img-pair">
-    <img src="assets/native-chicken-performance-improvement.jpg" alt="土雞性能提升對比" loading="lazy" onerror="this.style.display='none'">
-    <img src="assets/native-chicken-product-ratio.jpg" alt="土雞產品添加比例" loading="lazy" onerror="this.style.display='none'">
+<img src="assets/native-chicken-product-ratio.jpg" alt="土雞產品添加比例" loading="lazy" onerror="this.style.display='none'">
   </div>
 </div></section>
 <section class="section"><div class="container">
@@ -949,17 +1036,19 @@ tr:nth-child(even) td { background:var(--paper); }
 </div></section>
 <section class="section section--paper"><div class="container">
   <div class="section-label">Field Results</div><h2 class="section-title">Measured Performance Data</h2>
-  <div class="results-row">
-    <div class="results-row__img"><img src="assets/broiler-chicken-fcr-improvement.jpg" alt="白羽肉雞FCR改善實測" loading="lazy" onerror="this.style.display='none'"></div>
-    <div class="results-row__stats">
-      <ul class="stat-list">
-        <li><span class="stat-label">Breast yield</span><span class="stat-value">65% → 73.24%</span><span class="stat-change">↑+12.15%</span></li>
-        <li><span class="stat-label">Carcass yield</span><span class="stat-value">82% → 86.82%</span><span class="stat-change">↑+5.88%</span></li>
-        <li><span class="stat-label">FCR</span><span class="stat-value">1.80 → 1.62</span><span class="stat-change">↓8–12%</span></li>
-        <li><span class="stat-label">Live weight at day 42</span><span class="stat-value">+15–20%</span></li>
-        <li><span class="stat-label">Muscle antioxidant</span><span class="stat-value">+21.5%</span><span style="font-size:var(--text-xs);color:var(--mid);">MDPI 2014</span></li>
-      </ul>
-      <div class="usage-note" style="margin-top:var(--s4);">
+      <!-- Full-width comparison -->
+    <div class="broiler-compare">
+      <img src="assets/broiler-chicken-fcr-improvement.jpg" alt="Broiler Traditional vs ProGrow comparison" loading="lazy" onerror="this.style.display='none'">
+      <div class="broiler-compare__caption">Left: Traditional — 65% breast yield / Right: ProGrow® — 73.24% breast yield · Abdominal fat reduced</div>
+    </div>
+    <div class="kpi-strip">
+      <div class="kpi-strip__card"><div class="kpi-strip__before">65%</div><div class="kpi-strip__arrow">↑</div><div class="kpi-strip__after">73.24%</div><div class="kpi-strip__label">Breast yield<br><span class="kpi-strip__ref">+12.15%</span></div></div>
+      <div class="kpi-strip__card"><div class="kpi-strip__before">82%</div><div class="kpi-strip__arrow">↑</div><div class="kpi-strip__after">86.82%</div><div class="kpi-strip__label">Carcass yield<br><span class="kpi-strip__ref">+5.88%</span></div></div>
+      <div class="kpi-strip__card"><div class="kpi-strip__before">1.80</div><div class="kpi-strip__arrow">↓</div><div class="kpi-strip__after">1.62</div><div class="kpi-strip__label">FCR<br><span class="kpi-strip__ref">↓8–12%</span></div></div>
+      <div class="kpi-strip__card"><div class="kpi-strip__arrow">↑</div><div class="kpi-strip__after">+15–20%</div><div class="kpi-strip__label">Live weight<br><span class="kpi-strip__ref">Day 42</span></div></div>
+      <div class="kpi-strip__card"><div class="kpi-strip__arrow">↑</div><div class="kpi-strip__after">+21.5%</div><div class="kpi-strip__label">Muscle antioxidant<br><span class="kpi-strip__ref">MDPI 2014</span></div></div>
+    </div>
+    <div class="usage-note" style="margin-top:var(--s4);">
         <strong>📌 Application Rate</strong>
         <p>ProGrow® Broiler Enhancer: <strong>1 kg per tonne</strong> complete feed.</p>
         <p><strong>⚠️ Two-stage pre-mix (required):</strong> Adding 1 kg directly to 1 tonne risks severe uneven distribution — some birds get none, others get excess.<br>
@@ -971,7 +1060,7 @@ tr:nth-child(even) td { background:var(--paper); }
   </div>
   <div class="img-pair">
     <img src="assets/white-broiler-growth-curve-comparison.png" alt="Growth curve comparison" loading="lazy" onerror="this.style.display='none'">
-    <img src="assets/broiler_carcass_quality_comparison.jpg" alt="Carcass quality comparison" loading="lazy" onerror="this.style.display='none'">
+    <img src="assets/broiler-chicken-fcr-improvement.jpg" alt="Broiler breast meat comparison" loading="lazy" onerror="this.style.display='none'">
   </div>
   <div class="img-pair">
 <img src="assets/white-broiler-roi-calculation.png" alt="ROI calculation" loading="lazy" onerror="this.style.display='none'">
